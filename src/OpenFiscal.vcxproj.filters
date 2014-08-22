@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{68c69972-9d80-4e6e-b8fb-28f52e9101a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\arquivo">
+      <UniqueIdentifier>{4d7d81e9-77be-4243-ab47-9b74bca820e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{00ebbbca-03a8-46a4-9a5c-02473c018207}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\rapidxml-1.13">
+      <UniqueIdentifier>{2d387342-beba-4703-b57d-4707535ba451}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Objeto.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClInclude Include="Objeto.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="App.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClCompile Include="arquivo\Arquivo.cpp">
+      <Filter>src\arquivo</Filter>
+    </ClCompile>
+    <ClCompile Include="arquivo\ArquivoXml.cpp">
+      <Filter>src\arquivo</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp" >
+      <Filter>src</Filter>
+    </ClCompile>	  
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="arquivo\Arquivo.h">
+      <Filter>src\arquivo</Filter>
+    </ClInclude>
+    <ClInclude Include="arquivo\ArquivoXml.h">
+      <Filter>src\arquivo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\rapidxml-1.13\rapidxml.hpp">
+      <Filter>lib\rapidxml-1.13</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\rapidxml-1.13\rapidxml_iterators.hpp">
+      <Filter>lib\rapidxml-1.13</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\rapidxml-1.13\rapidxml_print.hpp">
+      <Filter>lib\rapidxml-1.13</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\rapidxml-1.13\rapidxml_utils.hpp">
+      <Filter>lib\rapidxml-1.13</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h" >
+	      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

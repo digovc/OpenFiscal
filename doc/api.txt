@@ -1,0 +1,31 @@
+Namespace OpenFiscal
+	
+* Class App
+* Class Erro
+* Class MensagemUsuario
+* Class Objeto
+* Class Utils
+
+* Namespace Arquivo
+
+ * Class ArqHtml
+ * Class ArqMain
+ * Class ArqXml
+
+ * Namespace DataBase
+
+ * Class DataBase
+ =* Class DbColuna
+ * Class DbTabela
+ 	
+* Namespace Mail
+
+ * Class Email
+	
+* Namespace ObjMain
+
+ * Class ObjMain
+	
+* Namespace Xml
+	
+* Namespace Http
