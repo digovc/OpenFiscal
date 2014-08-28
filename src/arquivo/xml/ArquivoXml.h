@@ -3,14 +3,15 @@
 #include <vector>
 
 #include "../Arquivo.h"
+#include "node/Node.h"
 
 using namespace std;
+
 using namespace OpenFiscal_arquivo;
+using namespace OpenFiscal_arquivo_xml_node;
 
 namespace OpenFiscal_arquivo_xml
 {
-	class Node;
-
 	class ArquivoXml :
 		public Arquivo
 	{

@@ -3,15 +3,17 @@
 
 #include "AppOpenFiscal.h"
 #include "Utils.h"
+#include "arquivo\xml\node\NfeNode.h"
 
 using namespace OpenFiscal;
+using namespace OpenFiscal_arquivo_xml_node;
 
 AppOpenFiscal AppOpenFiscal::i;
 
 AppOpenFiscal::AppOpenFiscal()
 {
 	this->setStrNome("OpenFiscal");
-	this->setStrDescricao("Biblioteca para gerar, altorizar e enviar arquivos fiscais brasileiros.");
+	this->setStrDescricao("Biblioteca para gerar, autorizar e transmitir arquivos fiscais brasileiros.");
 	this->setStrVersao("0.0.2");
 }
 
@@ -99,27 +101,21 @@ void main(int argc, char* argv[])
 void AppOpenFiscal::testar()
 {
 	AppOpenFiscal app;
-	AppOpenFiscal* pApp2;
-
-	app.setStrNome("App1");
 
 	cout << app.getStrNome();
 	cout << "\n";
-
-	pApp2 = &app;
-
-	pApp2->setStrNome("App2");
-
-	cout << pApp2->getStrNome();
+	cout << app.getStrDescricao();
 	cout << "\n";
+	cout << "\n\n\n\n\n";
+	cout << "\n\n\n\n\n";
+	cout << "\n\n\n\n\n";
+	cout << "\n\n\n\n\n";
 
-	cout << app.getStrNome();
-	cout << "\n";
+	
 
-	cout << "\n\n\n\n\n";
-	cout << "\n\n\n\n\n";
-	cout << "\n\n\n\n\n";
-	cout << "\n\n\n\n\n";
+	NfeNode objNfeNode(NULL);
+	objNfeNode.getPObjNodeCdv();
+	objNfeNode.getPObjNodeCdv();
 
 	system("pause");
 }

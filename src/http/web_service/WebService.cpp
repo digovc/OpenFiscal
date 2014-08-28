@@ -15,8 +15,8 @@ bool WebService::getBooSincrono(){
 	return _booSincrono;
 }
 
-Schema* WebService::getPObjSchemaEntrada(){
-	return _pObjSchemaEntrada;
+ArquivoXml* WebService::getPArqXmlIn(){
+	return _pArqXmlIn;
 }
 
 string WebService::getStrResposta(){
@@ -29,6 +29,10 @@ string WebService::getUrl(){
 
 void WebService::setBooSincrono(bool booSincrono){
 	_booSincrono = booSincrono;
+}
+
+void WebService::setPArqXmlIn(ArquivoXml* pArqXmlIn){
+	_pArqXmlIn = pArqXmlIn;
 }
 
 void WebService::setStrResposta(string strResposta){

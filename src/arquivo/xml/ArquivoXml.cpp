@@ -1,7 +1,7 @@
 #include "ArquivoXml.h"
-#include "Node.h"
 
 using namespace OpenFiscal_arquivo_xml;
+using namespace OpenFiscal_arquivo_xml_node;
 
 ArquivoXml::ArquivoXml()
 {

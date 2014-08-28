@@ -1,10 +1,10 @@
 #pragma once
 
-#include "..\..\Objeto.h"
-#include "..\..\arquivo\xml\schema\Schema.h"
+#include "../../Objeto.h"
+#include "../../arquivo/xml/ArquivoXml.h"
 
 using namespace OpenFiscal;
-using namespace OpenFiscal_arquivo_xml_schema;
+using namespace OpenFiscal_arquivo_xml;
 
 namespace OpenFiscal_http_web_service
 {
@@ -17,15 +17,12 @@ namespace OpenFiscal_http_web_service
 		WebService();
 		~WebService();
 
-	protected:
+		void setPArqXmlIn(ArquivoXml* pArqXmlIn);
 
-		bool _booSincrono;
-		string _strResposta;
-		string _url;
+	protected:
 		
+		ArquivoXml* getPArqXmlIn();
 		bool getBooSincrono();
-		virtual Schema* getPObjSchemaEntrada();
-		virtual Schema* getPObjSchemaSaida();
 		string getStrResposta();
 		string getUrl();
 		void setBooSincrono(bool booSincrono);
@@ -34,8 +31,11 @@ namespace OpenFiscal_http_web_service
 
 	private:
 
-		Schema* _pObjSchemaEntrada;
-		Schema* _pObjSchemaSaida;
+		ArquivoXml* _pArqXmlIn;
+		bool _booSincrono;
+		string _strResposta;
+		string _url;
+
 	};
 
 
