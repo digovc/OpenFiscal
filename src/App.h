@@ -18,6 +18,11 @@ namespace OpenFiscal{
 
 	protected:
 
+		string _strVersao;
+
+		string getStrVersao();
+		void setStrVersao(string strVersao);
+
 	private:
 
 

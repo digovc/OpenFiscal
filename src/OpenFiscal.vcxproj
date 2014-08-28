@@ -66,19 +66,41 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="App.cpp" />
-    <ClCompile Include="arquivo\ArquivoXml.cpp" />
+    <ClCompile Include="AppOpenFiscal.cpp" />
+    <ClCompile Include="arquivo\xml\ArquivoXml.cpp" />
+    <ClCompile Include="arquivo\xml\ArqXmlLote.cpp" />
+    <ClCompile Include="arquivo\xml\Node.cpp" />
     <ClCompile Include="Objeto.cpp" />
     <ClCompile Include="arquivo\Arquivo.cpp" />
     <ClCompile Include="Utils.cpp" />
+    <ClCompile Include="http\web_service\WebService.cpp" />
+    <ClCompile Include="http\web_service\WsCadastroConsultar.cpp" />
+    <ClCompile Include="http\web_service\WsEventoRegistrar.cpp" />
+    <ClCompile Include="http\web_service\WsNfeCancelar.cpp" />
+    <ClCompile Include="http\web_service\WsNfeConsultarSituacao.cpp" />
+    <ClCompile Include="http\web_service\WsNfeInutilizarNumeracao.cpp" />
+    <ClCompile Include="http\web_service\WsNfeRecepcao2.cpp" />
+    <ClCompile Include="http\web_service\WsServerStatus.cpp" />
     <ClInclude Include="..\lib\rapidxml-1.13\rapidxml.hpp" />
     <ClInclude Include="..\lib\rapidxml-1.13\rapidxml_iterators.hpp" />
     <ClInclude Include="..\lib\rapidxml-1.13\rapidxml_print.hpp" />
     <ClInclude Include="..\lib\rapidxml-1.13\rapidxml_utils.hpp" />
     <ClInclude Include="App.h" />
-    <ClInclude Include="arquivo\ArquivoXml.h" />
+    <ClInclude Include="AppOpenFiscal.h" />
+    <ClInclude Include="arquivo\xml\ArquivoXml.h" />
+    <ClInclude Include="arquivo\xml\ArqXmlLote.h" />
+    <ClInclude Include="arquivo\xml\Node.h" />
     <ClInclude Include="Objeto.h" />
     <ClInclude Include="arquivo\Arquivo.h" />
     <ClInclude Include="Utils.h" />
+    <ClInclude Include="http\web_service\WebService.h" />
+    <ClInclude Include="http\web_service\WsCadastroConsultar.h" />
+    <ClInclude Include="http\web_service\WsEventoRegistrar.h" />
+    <ClInclude Include="http\web_service\WsNfeCancelar.h" />
+    <ClInclude Include="http\web_service\WsNfeConsultarSituacao.h" />
+    <ClInclude Include="http\web_service\WsNfeInutilizarNumeracao.h" />
+    <ClInclude Include="http\web_service\WsNfeRecepcao2.h" />
+    <ClInclude Include="http\web_service\WsServerStatus.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

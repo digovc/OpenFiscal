@@ -13,6 +13,15 @@
     <Filter Include="lib\rapidxml-1.13">
       <UniqueIdentifier>{2d387342-beba-4703-b57d-4707535ba451}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\http">
+      <UniqueIdentifier>{3a25006a-0558-41ee-b1f6-730f1d6bef47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\http\web_service">
+      <UniqueIdentifier>{22910c61-5688-4207-9398-9b52b5cc3c5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\arquivo\xml">
+      <UniqueIdentifier>{bb1dae96-9755-44b5-94f7-0b245eebc107}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="App.cpp">
@@ -30,18 +39,48 @@
     <ClCompile Include="arquivo\Arquivo.cpp">
       <Filter>src\arquivo</Filter>
     </ClCompile>
-    <ClCompile Include="arquivo\ArquivoXml.cpp">
-      <Filter>src\arquivo</Filter>
-    </ClCompile>
-    <ClCompile Include="Utils.cpp" >
+    <ClCompile Include="Utils.cpp">
       <Filter>src</Filter>
-    </ClCompile>	  
+    </ClCompile>
+    <ClCompile Include="AppOpenFiscal.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="http\web_service\WebService.cpp">
+      <Filter>src\http\web_service</Filter>
+    </ClCompile>
+    <ClCompile Include="http\web_service\WsCadastroConsultar.cpp">
+      <Filter>src\http\web_service</Filter>
+    </ClCompile>
+    <ClCompile Include="http\web_service\WsEventoRegistrar.cpp">
+      <Filter>src\http\web_service</Filter>
+    </ClCompile>
+    <ClCompile Include="http\web_service\WsNfeCancelar.cpp">
+      <Filter>src\http\web_service</Filter>
+    </ClCompile>
+    <ClCompile Include="http\web_service\WsNfeConsultarSituacao.cpp">
+      <Filter>src\http\web_service</Filter>
+    </ClCompile>
+    <ClCompile Include="http\web_service\WsNfeInutilizarNumeracao.cpp">
+      <Filter>src\http\web_service</Filter>
+    </ClCompile>
+    <ClCompile Include="http\web_service\WsServerStatus.cpp">
+      <Filter>src\http\web_service</Filter>
+    </ClCompile>
+    <ClCompile Include="arquivo\xml\ArquivoXml.cpp">
+      <Filter>src\arquivo\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="arquivo\xml\ArqXmlLote.cpp">
+      <Filter>src\arquivo\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="arquivo\xml\Node.cpp">
+      <Filter>src\arquivo\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="http\web_service\WsNfeRecepcao2.cpp">
+      <Filter>src\http\web_service</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="arquivo\Arquivo.h">
-      <Filter>src\arquivo</Filter>
-    </ClInclude>
-    <ClInclude Include="arquivo\ArquivoXml.h">
       <Filter>src\arquivo</Filter>
     </ClInclude>
     <ClInclude Include="..\lib\rapidxml-1.13\rapidxml.hpp">
@@ -56,8 +95,44 @@
     <ClInclude Include="..\lib\rapidxml-1.13\rapidxml_utils.hpp">
       <Filter>lib\rapidxml-1.13</Filter>
     </ClInclude>
-    <ClInclude Include="Utils.h" >
-	      <Filter>src</Filter>
+    <ClInclude Include="Utils.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="AppOpenFiscal.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="http\web_service\WebService.h">
+      <Filter>src\http\web_service</Filter>
+    </ClInclude>
+    <ClInclude Include="http\web_service\WsNfeInutilizarNumeracao.h">
+      <Filter>src\http\web_service</Filter>
+    </ClInclude>
+    <ClInclude Include="http\web_service\WsNfeCancelar.h">
+      <Filter>src\http\web_service</Filter>
+    </ClInclude>
+    <ClInclude Include="http\web_service\WsNfeConsultarSituacao.h">
+      <Filter>src\http\web_service</Filter>
+    </ClInclude>
+    <ClInclude Include="http\web_service\WsServerStatus.h">
+      <Filter>src\http\web_service</Filter>
+    </ClInclude>
+    <ClInclude Include="http\web_service\WsCadastroConsultar.h">
+      <Filter>src\http\web_service</Filter>
+    </ClInclude>
+    <ClInclude Include="http\web_service\WsEventoRegistrar.h">
+      <Filter>src\http\web_service</Filter>
+    </ClInclude>
+    <ClInclude Include="arquivo\xml\ArquivoXml.h">
+      <Filter>src\arquivo\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="arquivo\xml\ArqXmlLote.h">
+      <Filter>src\arquivo\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="arquivo\xml\Node.h">
+      <Filter>src\arquivo\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="http\web_service\WsNfeRecepcao2.h">
+      <Filter>src\http\web_service</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

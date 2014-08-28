@@ -4,11 +4,12 @@
 #include <string>
 
 using namespace std;
+using namespace OpenFiscal;
 
 namespace OpenFiscal_arquivo{
 
 	class Arquivo :
-		public OpenFiscal::Objeto
+		public Objeto
 	{
 	public:
 
