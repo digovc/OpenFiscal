@@ -10,3 +10,8 @@ Arquivo::Arquivo()
 Arquivo::~Arquivo()
 {
 }
+
+int Arquivo::salvar()
+{
+	return 0;
+}

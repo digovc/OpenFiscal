@@ -1,0 +1,11 @@
+OpenFiscal
+Biblioteca para gerar, autorizar e transmitir arquivos fiscais brasileiros.
+
+Ajuda:
+
+Envio de arquivos: openfiscal [-e|--enviar] [-a|--arquivo_tipo [nfe|cfe|cte]] [-a|--arquivo <>]
+
+"-e" ou "--enviar"
+
+	-a --arquivo_tipo[nfe|cfe] 
+	-d --diretorio <diretório do arquivo>

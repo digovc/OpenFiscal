@@ -2,8 +2,9 @@
 #include <iostream>
 
 #include "AppOpenFiscal.h"
-#include "Utils.h"
 #include "arquivo\xml\node\NfeNode.h"
+#include "Console.h"
+#include "Utils.h"
 
 using namespace OpenFiscal;
 using namespace OpenFiscal_arquivo_xml_node;
@@ -19,6 +20,11 @@ AppOpenFiscal::AppOpenFiscal()
 
 AppOpenFiscal::~AppOpenFiscal()
 {
+}
+
+bool AppOpenFiscal::validarArg(char* argv[])
+{
+	return true;
 }
 
 int AppOpenFiscal::assinarNfeXml()
@@ -63,7 +69,7 @@ int AppOpenFiscal::inutilizarNumeracao()
 
 int AppOpenFiscal::processarArg(char* argv[])
 {
-	if (AppOpenFiscal::validarArg(argv))
+	if (!AppOpenFiscal::validarArg(argv))
 	{
 		return 500;
 	}
@@ -86,12 +92,6 @@ int AppOpenFiscal::transmitirNfe()
 	return 0;
 }
 
-int AppOpenFiscal::validarArg(char* argv[])
-{
-	return 0;
-}
-
-
 void main(int argc, char* argv[])
 {
 	AppOpenFiscal::i.processarArg(argv);
@@ -100,22 +100,16 @@ void main(int argc, char* argv[])
 
 void AppOpenFiscal::testar()
 {
-	AppOpenFiscal app;
+	Console::i.escrever(AppOpenFiscal::i.getStrNome());
+	Console::i.escrever(AppOpenFiscal::i.getStrDescricao());
 
-	cout << app.getStrNome();
-	cout << "\n";
-	cout << app.getStrDescricao();
-	cout << "\n";
-	cout << "\n\n\n\n\n";
-	cout << "\n\n\n\n\n";
-	cout << "\n\n\n\n\n";
-	cout << "\n\n\n\n\n";
-
-	
-
-	NfeNode objNfeNode(NULL);
-	objNfeNode.getPObjNodeCdv();
-	objNfeNode.getPObjNodeCdv();
+	do
+	{
+		if ("sair" == Console::i.lerString("Digite \"sair\" para abandonar o sistema."))
+		{
+			return;
+		}
+	} while (true);
 
 	system("pause");
 }

@@ -1,7 +1,8 @@
 #pragma once
 
-#include "../Objeto.h"
 #include <string>
+
+#include "../Objeto.h"
 
 using namespace std;
 using namespace OpenFiscal;
@@ -15,6 +16,11 @@ namespace OpenFiscal_arquivo{
 
 		Arquivo();
 		~Arquivo();
+
+		/**
+		Persiste o valor contido no arquivo em disco.
+		*/
+		virtual int salvar();
 
 	protected:
 

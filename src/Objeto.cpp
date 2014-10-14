@@ -5,7 +5,6 @@ using namespace OpenFiscal;
 
 Objeto::Objeto()
 {
-	static int intId = -1;
 	intId++;
 	this->setIntId(intId);
 }

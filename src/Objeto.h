@@ -6,6 +6,8 @@ using namespace std;
 
 namespace OpenFiscal
 {
+	static int intId = -1;
+
 	class Objeto
 	{
 	public:

@@ -68,10 +68,13 @@
     <ClCompile Include="App.cpp" />
     <ClCompile Include="AppOpenFiscal.cpp" />
     <ClCompile Include="arquivo\xml\ArquivoXml.cpp" />
+    <ClCompile Include="arquivo\xml\node\DestNode.cpp" />
     <ClCompile Include="arquivo\xml\node\Node.cpp" />
     <ClCompile Include="arquivo\xml\EnviNfe2ArqXml.cpp" />
     <ClCompile Include="arquivo\xml\node\NfeNode.cpp" />
     <ClCompile Include="arquivo\xml\node\NfrefNode.cpp" />
+    <ClCompile Include="arquivo\xml\node\EmitNode.cpp" />
+    <ClCompile Include="Console.cpp" />
     <ClCompile Include="Objeto.cpp" />
     <ClCompile Include="arquivo\Arquivo.cpp" />
     <ClCompile Include="Utils.cpp" />
@@ -90,10 +93,13 @@
     <ClInclude Include="App.h" />
     <ClInclude Include="AppOpenFiscal.h" />
     <ClInclude Include="arquivo\xml\ArquivoXml.h" />
+    <ClInclude Include="arquivo\xml\node\DestNode.h" />
     <ClInclude Include="arquivo\xml\node\Node.h" />
     <ClInclude Include="arquivo\xml\EnviNfe2ArqXml.h" />
     <ClInclude Include="arquivo\xml\node\NfeNode.h" />
     <ClInclude Include="arquivo\xml\node\NfrefNode.h" />
+    <ClInclude Include="arquivo\xml\node\EmitNode.h" />
+    <ClInclude Include="Console.h" />
     <ClInclude Include="Objeto.h" />
     <ClInclude Include="arquivo\Arquivo.h" />
     <ClInclude Include="Utils.h" />

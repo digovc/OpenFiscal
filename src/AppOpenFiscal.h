@@ -33,6 +33,7 @@ namespace OpenFiscal{
 		*/
 		int processarArg(char* argv[]);
 
+		bool validarArg(char* argv[]);
 		int assinarNfeXml();
 		int cancelarNfe();
 		int consultarCadastro();
@@ -44,7 +45,6 @@ namespace OpenFiscal{
 		int registrarEvento();
 		int transmitirLote();
 		int transmitirNfe();
-		int validarArg(char* argv[]);
 
 	protected:
 

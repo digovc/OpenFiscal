@@ -87,6 +87,15 @@
     <ClCompile Include="arquivo\xml\node\NfrefNode.cpp">
       <Filter>src\arquivo\xml\node</Filter>
     </ClCompile>
+    <ClCompile Include="arquivo\xml\node\EmitNode.cpp">
+      <Filter>src\arquivo\xml\node</Filter>
+    </ClCompile>
+    <ClCompile Include="arquivo\xml\node\DestNode.cpp">
+      <Filter>src\arquivo\xml\node</Filter>
+    </ClCompile>
+    <ClCompile Include="Console.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="arquivo\Arquivo.h">
@@ -148,6 +157,15 @@
     </ClInclude>
     <ClInclude Include="arquivo\xml\node\NfrefNode.h">
       <Filter>src\arquivo\xml\node</Filter>
+    </ClInclude>
+    <ClInclude Include="arquivo\xml\node\EmitNode.h">
+      <Filter>src\arquivo\xml\node</Filter>
+    </ClInclude>
+    <ClInclude Include="arquivo\xml\node\DestNode.h">
+      <Filter>src\arquivo\xml\node</Filter>
+    </ClInclude>
+    <ClInclude Include="Console.h">
+      <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
