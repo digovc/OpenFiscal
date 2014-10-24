@@ -36,5 +36,6 @@ namespace OpenFiscal
 
 		void setIntId(int intId);
 		void setStrNomeSimplificado(string strNomeSimplificado);
+
 	};
 }

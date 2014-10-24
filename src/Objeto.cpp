@@ -17,10 +17,6 @@ int Objeto::getIntId(){
 	return _intId;
 }
 
-void Objeto::setIntId(int intId){
-	_intId = intId;
-}
-
 string Objeto::getStrDescricao(){
 	return _strDescricao;
 }
@@ -34,11 +30,14 @@ string Objeto::getStrNomeExibicao(){
 }
 
 string Objeto::getStrNomeSimplificado(){
-	
 	_strNomeSimplificado = this->getStrNome();
 	_strNomeSimplificado = Utils::getStrSimplificada(_strNomeSimplificado);
 
 	return _strNomeSimplificado;
+}
+
+void Objeto::setIntId(int intId){
+	_intId = intId;
 }
 
 void Objeto::setStrDescricao(string strDescricao){

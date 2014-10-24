@@ -17,7 +17,7 @@ namespace OpenFiscal
 		double lerDouble(string strMsg);
 		int lerInteger(string strMsg);
 		string lerString(string strMsg);
-		void escrever(string strMsg);				
+		void escrever(string strMsg);
 
 	protected:
 

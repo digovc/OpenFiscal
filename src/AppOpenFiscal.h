@@ -22,17 +22,6 @@ namespace OpenFiscal{
 		*/
 		static AppOpenFiscal i;
 
-		/**
-		Método para testes no decorrer do desenvolvimento.
-		*/
-		void testar();
-
-		/**
-		Processa os parâmetros de entrada para executar os comandos
-		passados pelo usuário.
-		*/
-		int processarArg(char* argv[]);
-
 		bool validarArg(char* argv[]);
 		int assinarNfeXml();
 		int cancelarNfe();
@@ -42,7 +31,20 @@ namespace OpenFiscal{
 		int consultarStatusServer();
 		int gerarNfeXml();
 		int inutilizarNumeracao();
+
+		/**
+		Processa os parâmetros de entrada para executar os comandos
+		passados pelo usuário.
+		*/
+		int processarArg(char* argv[]);
+
 		int registrarEvento();
+
+		/**
+		Método para testes no decorrer do desenvolvimento.
+		*/
+		void testar();
+
 		int transmitirLote();
 		int transmitirNfe();
 
@@ -54,5 +56,4 @@ namespace OpenFiscal{
 		~AppOpenFiscal();
 
 	};
-
 }

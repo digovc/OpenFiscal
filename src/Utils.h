@@ -12,10 +12,10 @@ namespace OpenFiscal{
 
 		static const string STR_VAZIA;
 
-		static string getStrSimplificada(string str);
-		static char substituirCaracterEstranho(char chr);
 		static char substituirCaracterAcento(char chr);
+		static char substituirCaracterEstranho(char chr);
 		static char substituirCaracterPontuacao(char chr);
+		static string getStrSimplificada(string str);
 
 	private:
 
@@ -23,6 +23,4 @@ namespace OpenFiscal{
 		~Utils();
 
 	};
-
-
 }

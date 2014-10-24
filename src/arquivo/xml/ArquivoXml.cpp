@@ -20,7 +20,6 @@ string ArquivoXml::getStrNamespace(){
 
 xml_document<>* ArquivoXml::getXmlDoc()
 {
-
 	// TODO: Parei aqui, na criãção do arquivo.
 	if (_xmlDoc != nullptr)
 	{
@@ -31,10 +30,10 @@ xml_document<>* ArquivoXml::getXmlDoc()
 	xml_node<>* decl = _xmlDoc->allocate_node(node_declaration);
 
 	decl->append_attribute(_xmlDoc->allocate_attribute("version", "1.0"));
-	decl->append_attribute(_xmlDoc->allocate_attribute("encoding", "utf-8"));	
-	
+	decl->append_attribute(_xmlDoc->allocate_attribute("encoding", "utf-8"));
+
 	_xmlDoc->append_node(decl);
-	
+
 	return _xmlDoc;
 }
 
