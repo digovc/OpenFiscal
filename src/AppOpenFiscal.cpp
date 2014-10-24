@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include <iostream>
+#include <stdio.h>
 
 #include "AppOpenFiscal.h"
 #include "arquivo\xml\node\NfeNode.h"
@@ -82,6 +82,23 @@ int AppOpenFiscal::registrarEvento()
 	return 0;
 }
 
+void AppOpenFiscal::testar()
+{
+	Console::i.escrever(AppOpenFiscal::i.getStrNome());
+	Console::i.escrever(AppOpenFiscal::i.getStrDescricao());
+
+	do
+	{
+		if ("sair" == Console::i.lerString("Digite \"sair\" para abandonar o sistema."))
+		{
+			return;
+		}
+
+	} while (true);
+
+	system("pause");
+}
+
 int AppOpenFiscal::transmitirLote()
 {
 	return 0;
@@ -96,20 +113,4 @@ void main(int argc, char* argv[])
 {
 	AppOpenFiscal::i.processarArg(argv);
 	AppOpenFiscal::i.testar();
-}
-
-void AppOpenFiscal::testar()
-{
-	Console::i.escrever(AppOpenFiscal::i.getStrNome());
-	Console::i.escrever(AppOpenFiscal::i.getStrDescricao());
-
-	do
-	{
-		if ("sair" == Console::i.lerString("Digite \"sair\" para abandonar o sistema."))
-		{
-			return;
-		}
-	} while (true);
-
-	system("pause");
 }
