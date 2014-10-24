@@ -25,9 +25,9 @@ string Utils::getStrSimplificada(string str){
 	for each (char chr in str)
 	{
 		chr = tolower(chr);
-		chr = Utils::substituirCaracterAcento(chr);
-		chr = Utils::substituirCaracterEstranho(chr);
-		chr = Utils::substituirCaracterPontuacao(chr);
+		chr = Utils::removerCaracterAcento(chr);
+		chr = Utils::removerCaracterEstranho(chr);
+		chr = Utils::removerCaracterPontuacao(chr);
 
 		strResultado += chr;
 	}
@@ -36,7 +36,7 @@ string Utils::getStrSimplificada(string str){
 	strResultado = strResultado + "teste";
 }
 
-char Utils::substituirCaracterEstranho(char chr){
+char Utils::removerCaracterEstranho(char chr){
 
 	char chrResultado;
 	
@@ -75,7 +75,7 @@ char Utils::substituirCaracterEstranho(char chr){
 	return chrResultado;
 }
 
-char Utils::substituirCaracterAcento(char chr){
+char Utils::removerCaracterAcento(char chr){
 
 	char chrResultado;
 	
@@ -111,7 +111,7 @@ char Utils::substituirCaracterAcento(char chr){
 	return chrResultado;
 }
 
-char Utils::substituirCaracterPontuacao(char chr){
+char Utils::removerCaracterPontuacao(char chr){
 
 	char chrResultado;
 	
