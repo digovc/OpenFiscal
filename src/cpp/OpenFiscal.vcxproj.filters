@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{68c69972-9d80-4e6e-b8fb-28f52e9101a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\arquivo">
+      <UniqueIdentifier>{4d7d81e9-77be-4243-ab47-9b74bca820e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{00ebbbca-03a8-46a4-9a5c-02473c018207}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\rapidxml-1.13">
+      <UniqueIdentifier>{2d387342-beba-4703-b57d-4707535ba451}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\http">
+      <UniqueIdentifier>{3a25006a-0558-41ee-b1f6-730f1d6bef47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\http\web_service">
+      <UniqueIdentifier>{22910c61-5688-4207-9398-9b52b5cc3c5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\arquivo\xml">
+      <UniqueIdentifier>{bb1dae96-9755-44b5-94f7-0b245eebc107}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\arquivo\xml\node">
+      <UniqueIdentifier>{a255432e-effd-48c3-ac7f-02ca54279976}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\sqlite-amalgamation-3080701">
+      <UniqueIdentifier>{d5a5eb67-dbbd-4733-bab3-595dd5503778}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Objeto.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClInclude Include="Objeto.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="App.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClCompile Include="arquivo\Arquivo.cpp">
+      <Filter>src\arquivo</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="AppOpenFiscal.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="http\web_service\WebService.cpp">
+      <Filter>src\http\web_service</Filter>
+    </ClCompile>
+    <ClCompile Include="http\web_service\WsCadastroConsultar.cpp">
+      <Filter>src\http\web_service</Filter>
+    </ClCompile>
+    <ClCompile Include="http\web_service\WsEventoRegistrar.cpp">
+      <Filter>src\http\web_service</Filter>
+    </ClCompile>
+    <ClCompile Include="http\web_service\WsNfeCancelar.cpp">
+      <Filter>src\http\web_service</Filter>
+    </ClCompile>
+    <ClCompile Include="http\web_service\WsNfeConsultarSituacao.cpp">
+      <Filter>src\http\web_service</Filter>
+    </ClCompile>
+    <ClCompile Include="http\web_service\WsNfeInutilizarNumeracao.cpp">
+      <Filter>src\http\web_service</Filter>
+    </ClCompile>
+    <ClCompile Include="http\web_service\WsServerStatus.cpp">
+      <Filter>src\http\web_service</Filter>
+    </ClCompile>
+    <ClCompile Include="arquivo\xml\ArquivoXml.cpp">
+      <Filter>src\arquivo\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="http\web_service\WsNfeRecepcao2.cpp">
+      <Filter>src\http\web_service</Filter>
+    </ClCompile>
+    <ClCompile Include="arquivo\xml\node\NfeNode.cpp">
+      <Filter>src\arquivo\xml\node</Filter>
+    </ClCompile>
+    <ClCompile Include="arquivo\xml\node\Node.cpp">
+      <Filter>src\arquivo\xml\node</Filter>
+    </ClCompile>
+    <ClCompile Include="arquivo\xml\EnviNfe2ArqXml.cpp">
+      <Filter>src\arquivo\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="arquivo\xml\node\NfrefNode.cpp">
+      <Filter>src\arquivo\xml\node</Filter>
+    </ClCompile>
+    <ClCompile Include="arquivo\xml\node\EmitNode.cpp">
+      <Filter>src\arquivo\xml\node</Filter>
+    </ClCompile>
+    <ClCompile Include="arquivo\xml\node\DestNode.cpp">
+      <Filter>src\arquivo\xml\node</Filter>
+    </ClCompile>
+    <ClCompile Include="Console.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cpp-lib\sqlite-amalgamation-3080701\sqlite3.c">
+      <Filter>lib\sqlite-amalgamation-3080701</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="arquivo\Arquivo.h">
+      <Filter>src\arquivo</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="AppOpenFiscal.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="http\web_service\WebService.h">
+      <Filter>src\http\web_service</Filter>
+    </ClInclude>
+    <ClInclude Include="http\web_service\WsNfeInutilizarNumeracao.h">
+      <Filter>src\http\web_service</Filter>
+    </ClInclude>
+    <ClInclude Include="http\web_service\WsNfeCancelar.h">
+      <Filter>src\http\web_service</Filter>
+    </ClInclude>
+    <ClInclude Include="http\web_service\WsNfeConsultarSituacao.h">
+      <Filter>src\http\web_service</Filter>
+    </ClInclude>
+    <ClInclude Include="http\web_service\WsServerStatus.h">
+      <Filter>src\http\web_service</Filter>
+    </ClInclude>
+    <ClInclude Include="http\web_service\WsCadastroConsultar.h">
+      <Filter>src\http\web_service</Filter>
+    </ClInclude>
+    <ClInclude Include="http\web_service\WsEventoRegistrar.h">
+      <Filter>src\http\web_service</Filter>
+    </ClInclude>
+    <ClInclude Include="arquivo\xml\ArquivoXml.h">
+      <Filter>src\arquivo\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="http\web_service\WsNfeRecepcao2.h">
+      <Filter>src\http\web_service</Filter>
+    </ClInclude>
+    <ClInclude Include="arquivo\xml\node\Node.h">
+      <Filter>src\arquivo\xml\node</Filter>
+    </ClInclude>
+    <ClInclude Include="arquivo\xml\node\NfeNode.h">
+      <Filter>src\arquivo\xml\node</Filter>
+    </ClInclude>
+    <ClInclude Include="arquivo\xml\EnviNfe2ArqXml.h">
+      <Filter>src\arquivo\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="arquivo\xml\node\NfrefNode.h">
+      <Filter>src\arquivo\xml\node</Filter>
+    </ClInclude>
+    <ClInclude Include="arquivo\xml\node\EmitNode.h">
+      <Filter>src\arquivo\xml\node</Filter>
+    </ClInclude>
+    <ClInclude Include="arquivo\xml\node\DestNode.h">
+      <Filter>src\arquivo\xml\node</Filter>
+    </ClInclude>
+    <ClInclude Include="Console.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cpp-lib\rapidxml-1.13\rapidxml.hpp">
+      <Filter>lib\rapidxml-1.13</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cpp-lib\rapidxml-1.13\rapidxml_iterators.hpp">
+      <Filter>lib\rapidxml-1.13</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cpp-lib\rapidxml-1.13\rapidxml_print.hpp">
+      <Filter>lib\rapidxml-1.13</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cpp-lib\rapidxml-1.13\rapidxml_utils.hpp">
+      <Filter>lib\rapidxml-1.13</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cpp-lib\sqlite-amalgamation-3080701\sqlite3.h">
+      <Filter>lib\sqlite-amalgamation-3080701</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cpp-lib\sqlite-amalgamation-3080701\sqlite3ext.h">
+      <Filter>lib\sqlite-amalgamation-3080701</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
