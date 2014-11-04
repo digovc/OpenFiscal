@@ -1,10 +1,10 @@
 #pragma once
 
-#include "Objeto.h"
 #include <string>
 
-using namespace std;
+#include "Objeto.h"
 
+using namespace std;
 
 namespace OpenFiscal{
 
@@ -24,7 +24,6 @@ namespace OpenFiscal{
 		void setStrVersao(string strVersao);
 
 	private:
-
 
 	};
 }
