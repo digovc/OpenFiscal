@@ -1,1 +1,10 @@
+# Folders
 /src/cpp/Debug
+/src/c-sharp/OpenFiscalCSharp/bin
+/src/c-sharp/OpenFiscalCSharp/obj
+/src/c-sharp/Test/bin
+/src/c-sharp/Test/obj
+
+# Extentions
+*.sdf
+*.suo
