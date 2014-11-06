@@ -21,13 +21,13 @@ namespace OpenFiscal_arquivo_xml
 		Node* _pObjNodeIdlote;
 		Node* _pObjNodeIndsinc;
 		Node* _pObjNodeVersao;
-		vector<Node*> _lstPObjNodeNfe;
+		vector<Node*>* _pLstPObjNodeNfe;
 
 		Node* getPObjNodeEnvinfe();
 		Node* getPObjNodeIdlote();
 		Node* getPObjNodeIndsinc();
 		Node* getPObjNodeVersao();
-		vector<Node*> getLstPObjNodeNfe();
-
+		vector<Node*>* getPLstPObjNodeNfe();
+		void inicializarNodes();
 	};
 }

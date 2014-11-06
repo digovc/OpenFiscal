@@ -12,9 +12,6 @@ namespace OpenFiscal
 	{
 	public:
 
-		Objeto();
-		~Objeto();
-
 		int getIntId();
 		string getStrDescricao();
 		string getStrNome();
@@ -25,6 +22,9 @@ namespace OpenFiscal
 		void setStrNomeExibicao(string strNomeExibicao);
 
 	protected:
+
+		Objeto();
+		~Objeto();
 
 	private:
 

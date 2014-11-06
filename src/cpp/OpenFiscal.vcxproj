@@ -68,6 +68,7 @@
     <ClCompile Include="..\cpp-lib\sqlite-amalgamation-3080701\sqlite3.c" />
     <ClCompile Include="App.cpp" />
     <ClCompile Include="AppOpenFiscal.cpp" />
+    <ClCompile Include="Argumento.cpp" />
     <ClCompile Include="arquivo\xml\ArquivoXml.cpp" />
     <ClCompile Include="arquivo\xml\node\DestNode.cpp" />
     <ClCompile Include="arquivo\xml\node\Node.cpp" />
@@ -95,6 +96,7 @@
     <ClInclude Include="..\cpp-lib\sqlite-amalgamation-3080701\sqlite3ext.h" />
     <ClInclude Include="App.h" />
     <ClInclude Include="AppOpenFiscal.h" />
+    <ClInclude Include="Argumento.h" />
     <ClInclude Include="arquivo\xml\ArquivoXml.h" />
     <ClInclude Include="arquivo\xml\node\DestNode.h" />
     <ClInclude Include="arquivo\xml\node\Node.h" />

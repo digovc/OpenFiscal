@@ -13,6 +13,18 @@ EnviNfe2ArqXml::~EnviNfe2ArqXml()
 	// TODO: Deletar objetos criados.
 }
 
+vector<Node*>* EnviNfe2ArqXml::getPLstPObjNodeNfe()
+{
+	if (_pLstPObjNodeNfe != NULL)
+	{
+		return _pLstPObjNodeNfe;
+	}
+
+	_pLstPObjNodeNfe = new vector<Node*>();
+
+	return _pLstPObjNodeNfe;
+}
+
 Node* EnviNfe2ArqXml::getPObjNodeEnvinfe()
 {
 	if (_pObjNodeEnvinfe != nullptr)
@@ -76,11 +88,6 @@ Node* EnviNfe2ArqXml::getPObjNodeIndsinc()
 	return _pObjNodeIndsinc;
 }
 
-vector<Node*> EnviNfe2ArqXml::getLstPObjNodeNfe()
-{
-	return _lstPObjNodeNfe;
-}
-
 Node* EnviNfe2ArqXml::getPObjNodeVersao()
 {
 	if (_pObjNodeVersao != nullptr)
@@ -100,4 +107,12 @@ Node* EnviNfe2ArqXml::getPObjNodeVersao()
 	_pObjNodeVersao->setStrNome("versao");
 
 	return _pObjNodeVersao;
+}
+
+void EnviNfe2ArqXml::inicializarNodes()
+{
+	// TODO: Parei aqui.
+	ArquivoXml::inicializarNodes();
+
+
 }

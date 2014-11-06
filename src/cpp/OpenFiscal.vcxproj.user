@@ -3,6 +3,6 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LocalDebuggerCommand>$(TargetPath)</LocalDebuggerCommand>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
-    <LocalDebuggerCommandArguments>--ajuda</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>-x "C:\Users\r-vieira\AppData\Local\Temp\\AppOpenFiscal\NotaFiscalEletronica_00001.xml"</LocalDebuggerCommandArguments>
   </PropertyGroup>
 </Project>

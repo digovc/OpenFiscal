@@ -25,11 +25,14 @@ namespace OpenFiscal_arquivo_xml
 
 		vector<Node*> getLstPObjNode();
 
+		void carregarDadosBrutos();
+
 	protected:
 
 		string _strNamespace;
 
 		string getStrNamespace();
+		virtual void inicializarNodes();
 		void setStrNamespace(string strNamespace);
 
 	private:

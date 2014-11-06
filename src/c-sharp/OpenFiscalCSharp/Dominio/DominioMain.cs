@@ -15,7 +15,7 @@ namespace OpenFiscalCSharp.Dominio
         private string _dirExportCompleto;
         private string _strArquivoExportNome;
 
-        private string dirExportCompleto
+        public string dirExportCompleto
         {
             get
             {
@@ -94,9 +94,40 @@ namespace OpenFiscalCSharp.Dominio
         #region MÉTODOS
 
         /// <summary>
+        /// Deleta o arquivo XMl temporário que representa esta instância.
+        /// </summary>
+        public void deletarXml()
+        {
+            #region VARIÁVEIS
+
+            #endregion VARIÁVEIS
+
+            #region AÇÕES
+
+            try
+            {
+                if (!File.Exists(this.dirExportCompleto))
+                {
+                    return;
+                }
+
+                File.Delete(this.dirExportCompleto);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+            }
+
+            #endregion AÇÕES
+        }
+
+        /// <summary>
         /// Exporta os dados da instância deste objeto para um arquivo XML para ser usado pela
         /// </summary>
-        public void exportar()
+        public void exportarXml()
         {
             #region VARIÁVEIS
 

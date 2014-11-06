@@ -1,5 +1,7 @@
 #pragma once
 
+#include <vector>
+
 #include "App.h"
 
 /**
@@ -22,31 +24,16 @@ namespace OpenFiscal{
 		*/
 		static AppOpenFiscal i;
 
-		bool validarArg(char* argv[]);
-		int assinarNfeXml();
-		int cancelarNfe();
-		int consultarCadastro();
-		int consultarLote();
-		int consultarNfe();
-		int consultarStatusServer();
-		int gerarNfeXml();
-		int inutilizarNumeracao();
-
 		/**
 		Processa os parâmetros de entrada para executar os comandos
 		passados pelo usuário.
 		*/
-		int processarArg(char* argv[]);
-
-		int registrarEvento();
+		int carregarArg(char* argv[]);
 
 		/**
 		Método para testes no decorrer do desenvolvimento.
 		*/
 		void testar();
-
-		int transmitirLote();
-		int transmitirNfe();
 
 	protected:
 
@@ -54,6 +41,18 @@ namespace OpenFiscal{
 
 		AppOpenFiscal();
 		~AppOpenFiscal();
-
+	
+		bool validarArrChrArg();
+		int assinarNfeXml();
+		int cancelarNfe();
+		int consultarCadastro();
+		int consultarLote();
+		int consultarNfe();
+		int consultarStatusServer();
+		int criarNfeXml();
+		int inutilizarNumeracao();
+		int registrarEvento();
+		int transmitirLote();
+		int transmitirNfe();
 	};
 }

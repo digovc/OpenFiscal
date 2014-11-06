@@ -102,6 +102,9 @@
     <ClCompile Include="..\cpp-lib\sqlite-amalgamation-3080701\sqlite3.c">
       <Filter>lib\sqlite-amalgamation-3080701</Filter>
     </ClCompile>
+    <ClCompile Include="Argumento.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="arquivo\Arquivo.h">
@@ -178,6 +181,9 @@
     </ClInclude>
     <ClInclude Include="..\cpp-lib\sqlite-amalgamation-3080701\sqlite3ext.h">
       <Filter>lib\sqlite-amalgamation-3080701</Filter>
+    </ClInclude>
+    <ClInclude Include="Argumento.h">
+      <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

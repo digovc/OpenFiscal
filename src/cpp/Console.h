@@ -10,8 +10,6 @@ namespace OpenFiscal
 
 	public:
 
-		~Console();
-
 		static Console i;
 
 		double lerDouble(string strMsg);
@@ -24,6 +22,7 @@ namespace OpenFiscal
 	private:
 
 		Console();
+		~Console();
 
 	};
 }

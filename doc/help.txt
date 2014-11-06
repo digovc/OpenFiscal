@@ -1,11 +1,12 @@
-OpenFiscal
-Biblioteca para gerar, autorizar e transmitir arquivos fiscais brasileiros.
+#OpenFiscal
+###Biblioteca para gerar, autorizar e transmitir arquivos fiscais brasileiros.
 
-Ajuda:
+##Ajuda:
 
-Envio de arquivos: openfiscal [-e|--enviar] [-a|--arquivo_tipo [nfe|cfe|cte]] [-a|--arquivo <>]
+###Criar arquivo XML da Nota Fiscal eletrônica
 
-"-e" ou "--enviar"
+Síntese:
+`openfiscal [-x|--xml "<diretório>"]`
 
-	-a --arquivo_tipo[nfe|cfe] 
-	-d --diretorio <diretório do arquivo>
+Descrição: Comando para criação do arquivo XML que será posteriormente assinado e transmitido para o Governo.
+Este comando tem um argumento que é o diretório onde está localizado o objeto "NotaFiscalEletronica" em forma de XML (serializado) devidamente preenchido.

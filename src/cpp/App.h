@@ -13,10 +13,10 @@ namespace OpenFiscal{
 	{
 	public:
 
+	protected:
+
 		App();
 		~App();
-
-	protected:
 
 		string _strVersao;
 

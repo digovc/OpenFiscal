@@ -33,7 +33,6 @@ string Utils::getStrSimplificada(string str){
 	}
 
 	return strResultado;
-	strResultado = strResultado + "teste";
 }
 
 char Utils::removerCaracterEstranho(char chr){
