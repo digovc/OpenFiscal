@@ -10,9 +10,8 @@ ArquivoXml::~ArquivoXml()
 {
 }
 
-void ArquivoXml::carregarDadosBrutos()
+void ArquivoXml::carregarDados()
 {
-	this->inicializarNodes();
 }
 
 vector<Node*> ArquivoXml::getLstPObjNode(){
@@ -40,11 +39,6 @@ xml_document<>* ArquivoXml::getXmlDoc()
 	_xmlDoc->append_node(decl);
 
 	return _xmlDoc;
-}
-
-void ArquivoXml::inicializarNodes()
-{
-
 }
 
 void ArquivoXml::setStrNamespace(string strNamespace){

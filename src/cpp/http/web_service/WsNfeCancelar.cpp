@@ -6,7 +6,6 @@ WsNfeCancelar::WsNfeCancelar()
 {
 }
 
-
 WsNfeCancelar::~WsNfeCancelar()
 {
 }

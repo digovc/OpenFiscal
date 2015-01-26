@@ -611,4 +611,3 @@ vector<Node*> NfeNode::getLstPObjNodeNfref()
 {
 	return _lstPObjNodeNfref;
 }
-

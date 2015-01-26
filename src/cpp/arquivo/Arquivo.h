@@ -8,7 +8,6 @@ using namespace std;
 using namespace OpenFiscal;
 
 namespace OpenFiscal_arquivo{
-
 	class Arquivo :
 		public Objeto
 	{
@@ -25,7 +24,5 @@ namespace OpenFiscal_arquivo{
 	protected:
 
 	private:
-
 	};
 }
-

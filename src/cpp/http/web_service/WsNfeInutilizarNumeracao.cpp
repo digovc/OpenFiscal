@@ -6,7 +6,6 @@ WsNfeInutilizarNumeracao::WsNfeInutilizarNumeracao()
 {
 }
 
-
 WsNfeInutilizarNumeracao::~WsNfeInutilizarNumeracao()
 {
 }

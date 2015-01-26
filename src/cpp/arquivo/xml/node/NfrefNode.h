@@ -7,7 +7,6 @@ namespace OpenFiscal_arquivo_xml_node
 	class NfrefNode :
 		public Node
 	{
-
 	public:
 
 		NfrefNode(Node* pObjNodePai);

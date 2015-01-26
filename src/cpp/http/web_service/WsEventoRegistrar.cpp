@@ -6,7 +6,6 @@ WsEventoRegistrar::WsEventoRegistrar()
 {
 }
 
-
 WsEventoRegistrar::~WsEventoRegistrar()
 {
 }

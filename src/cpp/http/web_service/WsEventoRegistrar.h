@@ -7,7 +7,6 @@ namespace OpenFiscal_http_web_service
 	class WsEventoRegistrar :
 		public WebService
 	{
-
 	public:
 
 		WsEventoRegistrar();
@@ -16,7 +15,5 @@ namespace OpenFiscal_http_web_service
 	protected:
 
 	private:
-
 	};
-
 }

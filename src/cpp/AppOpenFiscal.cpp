@@ -59,7 +59,7 @@ int AppOpenFiscal::criarNfeXml()
 {
 	EnviNfe2ArqXml objEnviNfe2ArqXml;
 
-	objEnviNfe2ArqXml.carregarDadosBrutos();
+	objEnviNfe2ArqXml.carregarDados();
 
 	return 0;
 }
@@ -78,10 +78,10 @@ int AppOpenFiscal::carregarArg(char* argv[])
 
 	for (size_t i = 0; i < sizeof(argv) - 1; i++)
 	{
-		Argumento::i.getPLstPStrArgumento()->emplace_back(argv[i]);
+		Argumento::i.getPLstPStrArgumento()->push_back(argv[i]);
 	}
 
-	if (Argumento::i.getEnmAcaoPrincipal()  == XML)
+	if (Argumento::i.getEnmAcaoPrincipal() == XML)
 	{
 		this->criarNfeXml();
 	}
@@ -96,17 +96,10 @@ int AppOpenFiscal::registrarEvento()
 
 void AppOpenFiscal::testar()
 {
-	Console::i.escrever(AppOpenFiscal::i.getStrNome());
-	Console::i.escrever(AppOpenFiscal::i.getStrDescricao());
-
-	do
+	for (string str : *Argumento::i.getPLstDirNfeXmlBruto())
 	{
-		if ("sair" == Console::i.lerString("Digite \"sair\" para abandonar o sistema."))
-		{
-			return;
-		}
-
-	} while (true);
+		Console::i.escrever(str);
+	}
 
 	system("pause");
 }
@@ -130,6 +123,6 @@ bool AppOpenFiscal::validarArrChrArg()
 void main(int argc, char* argv[])
 {
 	AppOpenFiscal::i.carregarArg(argv);
-	//AppOpenFiscal::i.testar();
-	//return;
+	AppOpenFiscal::i.testar();
+	return;
 }

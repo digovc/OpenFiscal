@@ -7,7 +7,6 @@ namespace OpenFiscal_http_web_service
 	class WsServerStatus :
 		public WebService
 	{
-
 	public:
 		WsServerStatus();
 		~WsServerStatus();
@@ -15,6 +14,5 @@ namespace OpenFiscal_http_web_service
 	protected:
 
 	private:
-
 	};
 }

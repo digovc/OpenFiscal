@@ -14,18 +14,17 @@ Argumento::~Argumento()
 }
 
 EnmAcaoPrincipal Argumento::getEnmAcaoPrincipal(){
-	
 	string str;
 
-	if (_enmAcaoPrincipal!=NONE)
+	if (_enmAcaoPrincipal != NONE)
 	{
 		return _enmAcaoPrincipal;
 	}
 
-	str = *this->getPLstPStrArgumento()->at(0);
+	str = this->getPLstPStrArgumento()->at(1);
 	str = Utils::getStrSimplificada(str);
 
-	if (str == "-x" || str == "--xml")
+	if (str == "_x" || str == "__xml")
 	{
 		_enmAcaoPrincipal = XML;
 	}
@@ -33,26 +32,24 @@ EnmAcaoPrincipal Argumento::getEnmAcaoPrincipal(){
 	return _enmAcaoPrincipal;
 }
 
-string Argumento::getDirNfeXmlBruto(){
-
-	if (!_dirNfeXmlBruto.empty())
+vector<string>* Argumento::getPLstDirNfeXmlBruto(){
+	if (_pLstDirNfeXmlBruto = NULL)
 	{
-		return _dirNfeXmlBruto;
+		return _pLstDirNfeXmlBruto;
 	}
 
-	_dirNfeXmlBruto = *this->getPLstPStrArgumento()->at(1);
+	_pLstDirNfeXmlBruto = Utils::separarString(this->getPLstPStrArgumento()->at(2), '|');
 
-	return _dirNfeXmlBruto;
+	return _pLstDirNfeXmlBruto;
 }
 
-vector<string*>* Argumento::getPLstPStrArgumento(){
-
+vector<string>* Argumento::getPLstPStrArgumento(){
 	if (_pLstPStrArgumento != NULL)
 	{
 		return _pLstPStrArgumento;
 	}
 
-	_pLstPStrArgumento = new vector<string*>();
+	_pLstPStrArgumento = new vector<string>();
 
 	return _pLstPStrArgumento;
 }

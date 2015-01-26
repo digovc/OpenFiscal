@@ -7,7 +7,6 @@
 using namespace std;
 
 namespace OpenFiscal{
-
 	class App :
 		public Objeto
 	{
@@ -24,7 +23,5 @@ namespace OpenFiscal{
 		void setStrVersao(string strVersao);
 
 	private:
-
 	};
 }
-

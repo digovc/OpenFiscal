@@ -6,7 +6,6 @@ WsServerStatus::WsServerStatus()
 {
 }
 
-
 WsServerStatus::~WsServerStatus()
 {
 }

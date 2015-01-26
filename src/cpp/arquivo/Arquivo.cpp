@@ -6,7 +6,6 @@ Arquivo::Arquivo()
 {
 }
 
-
 Arquivo::~Arquivo()
 {
 }

@@ -6,7 +6,6 @@ WsNfeConsultarSituacao::WsNfeConsultarSituacao()
 {
 }
 
-
 WsNfeConsultarSituacao::~WsNfeConsultarSituacao()
 {
 }

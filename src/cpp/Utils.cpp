@@ -8,13 +8,11 @@ Utils::Utils()
 {
 }
 
-
 Utils::~Utils()
 {
 }
 
 string Utils::getStrSimplificada(string str){
-
 	string strResultado;
 
 	if (str.empty())
@@ -36,9 +34,8 @@ string Utils::getStrSimplificada(string str){
 }
 
 char Utils::removerCaracterEstranho(char chr){
-
 	char chrResultado;
-	
+
 	chrResultado = chr;
 
 	if (chrResultado == '\'') return '_';
@@ -75,9 +72,8 @@ char Utils::removerCaracterEstranho(char chr){
 }
 
 char Utils::removerCaracterAcento(char chr){
-
 	char chrResultado;
-	
+
 	chrResultado = chr;
 
 	if (chrResultado == 'ä') return 'a';
@@ -111,9 +107,8 @@ char Utils::removerCaracterAcento(char chr){
 }
 
 char Utils::removerCaracterPontuacao(char chr){
-
 	char chrResultado;
-	
+
 	chrResultado = chr;
 
 	if (chrResultado == '!') return '_';
@@ -124,4 +119,31 @@ char Utils::removerCaracterPontuacao(char chr){
 	if (chrResultado == '?') return '_';
 
 	return chrResultado;
+}
+
+vector<string>* Utils::separarString(string str, char chrDelimitador)
+{
+	string strTermo;
+	vector<string>* pLstStrResultado = new vector<string>();
+
+	if (str.empty() || chrDelimitador == NULL)
+	{
+		return pLstStrResultado;
+	}
+
+	for (char& chr : str) {
+
+		if (chr == chrDelimitador)
+		{
+			pLstStrResultado->push_back(strTermo);
+			strTermo = "";
+			continue;
+		}
+
+		strTermo += chr;
+	}
+
+	pLstStrResultado->push_back(strTermo);
+
+	return pLstStrResultado;
 }

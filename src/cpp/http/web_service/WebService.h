@@ -11,7 +11,6 @@ namespace OpenFiscal_http_web_service
 	class WebService :
 		public Objeto
 	{
-
 	public:
 
 		WebService();
@@ -20,7 +19,7 @@ namespace OpenFiscal_http_web_service
 		void setPArqXmlIn(ArquivoXml* pArqXmlIn);
 
 	protected:
-		
+
 		ArquivoXml* getPArqXmlIn();
 		bool getBooSincrono();
 		string getStrResposta();
@@ -35,8 +34,5 @@ namespace OpenFiscal_http_web_service
 		bool _booSincrono;
 		string _strResposta;
 		string _url;
-
 	};
-
-
 }

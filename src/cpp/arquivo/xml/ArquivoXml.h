@@ -17,7 +17,6 @@ namespace OpenFiscal_arquivo_xml
 	class ArquivoXml :
 		public Arquivo
 	{
-
 	public:
 
 		ArquivoXml();
@@ -25,14 +24,13 @@ namespace OpenFiscal_arquivo_xml
 
 		vector<Node*> getLstPObjNode();
 
-		void carregarDadosBrutos();
+		virtual void carregarDados();
 
 	protected:
 
 		string _strNamespace;
 
 		string getStrNamespace();
-		virtual void inicializarNodes();
 		void setStrNamespace(string strNamespace);
 
 	private:
@@ -43,4 +41,3 @@ namespace OpenFiscal_arquivo_xml
 		xml_document<>* getXmlDoc();
 	};
 }
-

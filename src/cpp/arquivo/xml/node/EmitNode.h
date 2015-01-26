@@ -7,7 +7,6 @@ namespace OpenFiscal_arquivo_xml_node
 	class EmitNode :
 		public Node
 	{
-
 	public:
 
 		EmitNode(Node* pObjNodePai);
@@ -62,8 +61,5 @@ namespace OpenFiscal_arquivo_xml_node
 		Node* getPObjNodeXmun();
 		Node* getPObjNodeXnome();
 		Node* getPObjNodeXpais();
-
 	};
-
-
 }

@@ -11,11 +11,9 @@ são inválidos.
 #define INT_ERROR_ARG_INVALIDO 500;
 
 namespace OpenFiscal{
-
 	class AppOpenFiscal :
 		public App
 	{
-
 	public:
 
 		/**
@@ -41,7 +39,7 @@ namespace OpenFiscal{
 
 		AppOpenFiscal();
 		~AppOpenFiscal();
-	
+
 		bool validarArrChrArg();
 		int assinarNfeXml();
 		int cancelarNfe();

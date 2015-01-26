@@ -7,7 +7,6 @@ namespace OpenFiscal_http_web_service
 	class WsNfeConsultarSituacao :
 		public WebService
 	{
-
 	public:
 
 		WsNfeConsultarSituacao();
@@ -16,8 +15,5 @@ namespace OpenFiscal_http_web_service
 	private:
 
 	protected:
-
 	};
-
-
 }

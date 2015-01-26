@@ -7,7 +7,6 @@ namespace OpenFiscal
 	class Console :
 		public Objeto
 	{
-
 	public:
 
 		static Console i;
@@ -23,6 +22,5 @@ namespace OpenFiscal
 
 		Console();
 		~Console();
-
 	};
 }

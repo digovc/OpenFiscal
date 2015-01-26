@@ -7,7 +7,6 @@ namespace OpenFiscal_http_web_service
 	class WsNfeInutilizarNumeracao :
 		public WebService
 	{
-
 	public:
 
 		WsNfeInutilizarNumeracao();
@@ -16,9 +15,5 @@ namespace OpenFiscal_http_web_service
 	protected:
 
 	private:
-
 	};
-
-
 }
-

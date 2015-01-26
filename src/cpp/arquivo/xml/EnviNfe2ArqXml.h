@@ -7,27 +7,27 @@ namespace OpenFiscal_arquivo_xml
 	class EnviNfe2ArqXml :
 		public ArquivoXml
 	{
-
 	public:
 
 		EnviNfe2ArqXml();
 		~EnviNfe2ArqXml();
 
+		virtual void carregarDados();
+
 	protected:
 
 	private:
 
-		Node* _pObjNodeEnvinfe;		
+		Node* _pObjNodeEnvinfe;
 		Node* _pObjNodeIdlote;
 		Node* _pObjNodeIndsinc;
 		Node* _pObjNodeVersao;
-		vector<Node*>* _pLstPObjNodeNfe;
+		vector<Node*> _lstPObjNodeNfe;
 
 		Node* getPObjNodeEnvinfe();
 		Node* getPObjNodeIdlote();
 		Node* getPObjNodeIndsinc();
 		Node* getPObjNodeVersao();
-		vector<Node*>* getPLstPObjNodeNfe();
-		void inicializarNodes();
+		vector<Node*> getLstPObjNodeNfe();
 	};
 }

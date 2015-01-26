@@ -7,7 +7,6 @@ namespace OpenFiscal_http_web_service
 	class WsCadastroConsultar :
 		public WebService
 	{
-
 	public:
 
 		WsCadastroConsultar();
@@ -16,8 +15,5 @@ namespace OpenFiscal_http_web_service
 	protected:
 
 	private:
-
 	};
-
-
 }

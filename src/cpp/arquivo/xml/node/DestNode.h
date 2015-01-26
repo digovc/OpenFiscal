@@ -7,7 +7,6 @@ namespace OpenFiscal_arquivo_xml_node
 	class DestNode :
 		public Node
 	{
-
 	public:
 
 		DestNode(Node* pObjNodePai);
@@ -60,8 +59,5 @@ namespace OpenFiscal_arquivo_xml_node
 		Node* getPObjNodeXmun();
 		Node* getPObjNodeXnome();
 		Node* getPObjNodeXpais();
-
 	};
-
-
 }

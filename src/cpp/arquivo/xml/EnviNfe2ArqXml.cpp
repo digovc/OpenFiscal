@@ -13,16 +13,24 @@ EnviNfe2ArqXml::~EnviNfe2ArqXml()
 	// TODO: Deletar objetos criados.
 }
 
-vector<Node*>* EnviNfe2ArqXml::getPLstPObjNodeNfe()
+void EnviNfe2ArqXml::carregarDados()
 {
-	if (_pLstPObjNodeNfe != NULL)
+	ArquivoXml::carregarDados();
+
+	this->getPObjNodeVersao()->setDblValor(2.00);
+	//this->getPObjNodeIdlote()->setIntValor(???);
+}
+
+vector<Node*> EnviNfe2ArqXml::getLstPObjNodeNfe()
+{
+	if (!_lstPObjNodeNfe.empty())
 	{
-		return _pLstPObjNodeNfe;
+		return _lstPObjNodeNfe;
 	}
 
-	_pLstPObjNodeNfe = new vector<Node*>();
+	_lstPObjNodeNfe = vector<Node*>();
 
-	return _pLstPObjNodeNfe;
+	return _lstPObjNodeNfe;
 }
 
 Node* EnviNfe2ArqXml::getPObjNodeEnvinfe()
@@ -107,12 +115,4 @@ Node* EnviNfe2ArqXml::getPObjNodeVersao()
 	_pObjNodeVersao->setStrNome("versao");
 
 	return _pObjNodeVersao;
-}
-
-void EnviNfe2ArqXml::inicializarNodes()
-{
-	// TODO: Parei aqui.
-	ArquivoXml::inicializarNodes();
-
-
 }

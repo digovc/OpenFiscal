@@ -11,7 +11,6 @@ namespace OpenFiscal_arquivo_xml_node
 	class NfeNode :
 		public Node
 	{
-
 	public:
 
 		NfeNode(Node* pObjNodePai);
@@ -83,5 +82,4 @@ namespace OpenFiscal_arquivo_xml_node
 		Node* getPObjNodeXjust();
 		vector<Node*> getLstPObjNodeNfref();
 	};
-
 }

@@ -6,7 +6,6 @@ WsCadastroConsultar::WsCadastroConsultar()
 {
 }
 
-
 WsCadastroConsultar::~WsCadastroConsultar()
 {
 }
