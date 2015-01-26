@@ -14,11 +14,13 @@ void ArquivoXml::carregarDados()
 {
 }
 
-vector<Node*> ArquivoXml::getLstPObjNode(){
+vector<Node*> ArquivoXml::getLstPObjNode()
+{
 	return _lstPObjNode;
 }
 
-string ArquivoXml::getStrNamespace(){
+string ArquivoXml::getStrNamespace()
+{
 	return _strNamespace;
 }
 
@@ -41,6 +43,7 @@ xml_document<>* ArquivoXml::getXmlDoc()
 	return _xmlDoc;
 }
 
-void ArquivoXml::setStrNamespace(string strNamespace){
+void ArquivoXml::setStrNamespace(string strNamespace)
+{
 	_strNamespace = strNamespace;
 }

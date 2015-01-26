@@ -7,7 +7,8 @@
 using namespace std;
 using namespace OpenFiscal;
 
-namespace OpenFiscal_arquivo{
+namespace OpenFiscal_arquivo
+{
 	class Arquivo :
 		public Objeto
 	{

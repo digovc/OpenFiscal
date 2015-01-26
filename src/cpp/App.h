@@ -6,7 +6,8 @@
 
 using namespace std;
 
-namespace OpenFiscal{
+namespace OpenFiscal
+{
 	class App :
 		public Objeto
 	{

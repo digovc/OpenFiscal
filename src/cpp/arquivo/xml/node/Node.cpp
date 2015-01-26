@@ -13,98 +13,123 @@ Node::~Node()
 {
 }
 
-double Node::getDblValor(){
+double Node::getDblValor()
+{
+
 	_dblValor = stod(this->getStrValor());
 
 	return _dblValor;
 }
 
-EnmElementoTipo Node::getEnmElementoTipo(){
+EnmElementoTipo Node::getEnmElementoTipo()
+{
 	return _enmElementoTipo;
 }
 
-EnmValorTipo Node::getEnmValorTipo(){
+EnmValorTipo Node::getEnmValorTipo()
+{
 	return _enmValorTipo;
 }
 
-int Node::getIntOcorrenciaMax(){
+int Node::getIntOcorrenciaMax()
+{
 	return _intOcorrenciaMax;
 }
 
-int Node::getIntOcorrenciaMin(){
+int Node::getIntOcorrenciaMin()
+{
 	return _intOcorrenciaMin;
 }
 
-int Node::getIntTamanhoMax(){
+int Node::getIntTamanhoMax()
+{
 	return _intTamanhoMax;
 }
 
-int Node::getIntTamanhoMin(){
+int Node::getIntTamanhoMin()
+{
 	return _intTamanhoMin;
 }
 
-int Node::getIntValor(){
+int Node::getIntValor()
+{
+
 	_intValor = stoi(this->getStrValor());
 
 	return _intValor;
 }
 
-Node* Node::getPObjNodePai(){
+Node* Node::getPObjNodePai()
+{
 	return _pObjNodePai;
 }
 
-string Node::getStrIdentificador(){
+string Node::getStrIdentificador()
+{
 	return _strIdentificador;
 }
 
-string Node::getStrValor(){
+string Node::getStrValor()
+{
 	return _strValor;
 }
 
-void Node::setDblValor(double dblValor){
+void Node::setDblValor(double dblValor)
+{
+
 	_dblValor = dblValor;
 
 	this->setStrValor(to_string(_dblValor));
 }
 
-void Node::setEnmElementoTipo(EnmElementoTipo enmElementoTipo){
+void Node::setEnmElementoTipo(EnmElementoTipo enmElementoTipo)
+{
 	_enmElementoTipo = enmElementoTipo;
 }
 
-void Node::setEnmValorTipo(EnmValorTipo enmValorTipo){
+void Node::setEnmValorTipo(EnmValorTipo enmValorTipo)
+{
 	_enmValorTipo = enmValorTipo;
 }
 
-void Node::setIntOcorrenciaMax(int intOcorrenciaMax){
+void Node::setIntOcorrenciaMax(int intOcorrenciaMax)
+{
 	_intOcorrenciaMax = intOcorrenciaMax;
 }
 
-void Node::setIntOcorrenciaMin(int intOcorrenciaMin){
+void Node::setIntOcorrenciaMin(int intOcorrenciaMin)
+{
 	_intOcorrenciaMin = intOcorrenciaMin;
 }
 
-void Node::setIntTamanhoMax(int intTamanhoMax){
+void Node::setIntTamanhoMax(int intTamanhoMax)
+{
 	_intTamanhoMax = intTamanhoMax;
 }
 
-void Node::setIntTamanhoMin(int intTamanhoMin){
+void Node::setIntTamanhoMin(int intTamanhoMin)
+{
 	_intTamanhoMin = intTamanhoMin;
 }
 
-void Node::setIntValor(int intValor){
+void Node::setIntValor(int intValor)
+{
 	_intValor = intValor;
 
 	this->setStrValor(to_string(_intValor));
 }
 
-void Node::setPObjNodePai(Node* pObjNodePai){
+void Node::setPObjNodePai(Node* pObjNodePai)
+{
 	_pObjNodePai = pObjNodePai;
 }
 
-void Node::setStrIdentificador(string strIdentificador){
+void Node::setStrIdentificador(string strIdentificador)
+{
 	_strIdentificador = strIdentificador;
 }
 
-void Node::setStrValor(string strValor){
+void Node::setStrValor(string strValor)
+{
 	_strValor = strValor;
 }

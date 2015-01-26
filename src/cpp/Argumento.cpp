@@ -13,7 +13,8 @@ Argumento::~Argumento()
 {
 }
 
-EnmAcaoPrincipal Argumento::getEnmAcaoPrincipal(){
+EnmAcaoPrincipal Argumento::getEnmAcaoPrincipal()
+{
 	string str;
 
 	if (_enmAcaoPrincipal != NONE)
@@ -32,7 +33,8 @@ EnmAcaoPrincipal Argumento::getEnmAcaoPrincipal(){
 	return _enmAcaoPrincipal;
 }
 
-vector<string>* Argumento::getPLstDirNfeXmlBruto(){
+vector<string>* Argumento::getPLstDirNfeXmlBruto()
+{
 	if (_pLstDirNfeXmlBruto = NULL)
 	{
 		return _pLstDirNfeXmlBruto;
@@ -43,7 +45,8 @@ vector<string>* Argumento::getPLstDirNfeXmlBruto(){
 	return _pLstDirNfeXmlBruto;
 }
 
-vector<string>* Argumento::getPLstPStrArgumento(){
+vector<string>* Argumento::getPLstPStrArgumento()
+{
 	if (_pLstPStrArgumento != NULL)
 	{
 		return _pLstPStrArgumento;

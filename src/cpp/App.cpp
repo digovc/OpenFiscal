@@ -10,10 +10,12 @@ App::~App()
 {
 }
 
-string App::getStrVersao(){
+string App::getStrVersao()
+{
 	return _strVersao;
 }
 
-void App::setStrVersao(string strVersao){
+void App::setStrVersao(string strVersao)
+{
 	_strVersao = strVersao;
 }

@@ -11,34 +11,42 @@ WebService::~WebService()
 {
 }
 
-bool WebService::getBooSincrono(){
+bool WebService::getBooSincrono()
+{
 	return _booSincrono;
 }
 
-ArquivoXml* WebService::getPArqXmlIn(){
+ArquivoXml* WebService::getPArqXmlIn()
+{
 	return _pArqXmlIn;
 }
 
-string WebService::getStrResposta(){
+string WebService::getStrResposta()
+{
 	return _strResposta;
 }
 
-string WebService::getUrl(){
+string WebService::getUrl()
+{
 	return _url;
 }
 
-void WebService::setBooSincrono(bool booSincrono){
+void WebService::setBooSincrono(bool booSincrono)
+{
 	_booSincrono = booSincrono;
 }
 
-void WebService::setPArqXmlIn(ArquivoXml* pArqXmlIn){
+void WebService::setPArqXmlIn(ArquivoXml* pArqXmlIn)
+{
 	_pArqXmlIn = pArqXmlIn;
 }
 
-void WebService::setStrResposta(string strResposta){
+void WebService::setStrResposta(string strResposta)
+{
 	_strResposta = strResposta;
 }
 
-void WebService::setUrl(string url){
+void WebService::setUrl(string url)
+{
 	_url = url;
 }

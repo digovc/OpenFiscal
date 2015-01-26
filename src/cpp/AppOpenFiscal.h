@@ -10,7 +10,8 @@ são inválidos.
 */
 #define INT_ERROR_ARG_INVALIDO 500;
 
-namespace OpenFiscal{
+namespace OpenFiscal
+{
 	class AppOpenFiscal :
 		public App
 	{

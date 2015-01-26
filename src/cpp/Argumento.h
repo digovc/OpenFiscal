@@ -4,8 +4,10 @@
 
 #include "Objeto.h"
 
-namespace OpenFiscal{
-	enum EnmAcaoPrincipal{
+namespace OpenFiscal
+{
+	enum EnmAcaoPrincipal
+	{
 		/*
 		 * -x ou --xml: Importação dos dados do objeto serializado no XML para
 		 * criação do XML final que será assinado e poderá ser

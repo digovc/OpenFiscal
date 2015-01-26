@@ -5,7 +5,8 @@
 
 using namespace std;
 
-namespace OpenFiscal{
+namespace OpenFiscal
+{
 	class Utils
 	{
 	public:
