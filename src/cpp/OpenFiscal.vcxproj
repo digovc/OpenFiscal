@@ -76,6 +76,9 @@
     <ClCompile Include="arquivo\xml\node\NfeNode.cpp" />
     <ClCompile Include="arquivo\xml\node\NfrefNode.cpp" />
     <ClCompile Include="arquivo\xml\node\EmitNode.cpp" />
+    <ClCompile Include="arquivo\xml\obj\Endereco.cpp" />
+    <ClCompile Include="arquivo\xml\obj\NotaFiscalEletronica.cpp" />
+    <ClCompile Include="arquivo\xml\obj\ObjetoMain.cpp" />
     <ClCompile Include="Console.cpp" />
     <ClCompile Include="Objeto.cpp" />
     <ClCompile Include="arquivo\Arquivo.cpp" />
@@ -104,6 +107,9 @@
     <ClInclude Include="arquivo\xml\node\NfeNode.h" />
     <ClInclude Include="arquivo\xml\node\NfrefNode.h" />
     <ClInclude Include="arquivo\xml\node\EmitNode.h" />
+    <ClInclude Include="arquivo\xml\obj\Endereco.h" />
+    <ClInclude Include="arquivo\xml\obj\NotaFiscalEletronica.h" />
+    <ClInclude Include="arquivo\xml\obj\ObjetoMain.h" />
     <ClInclude Include="Console.h" />
     <ClInclude Include="Objeto.h" />
     <ClInclude Include="arquivo\Arquivo.h" />

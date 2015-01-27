@@ -9,57 +9,57 @@ namespace OpenFiscal_arquivo_xml_node
 	{
 	public:
 
-		EmitNode(Node* pObjNodePai);
+		EmitNode(Node* pNdePai);
 		~EmitNode();
 
 	protected:
 
 	private:
 
-		Node* _pObjNodeCep;
-		Node* _pObjNodeCmun;
-		Node* _pObjNodeCnae;
-		Node* _pObjNodeCnpj;
-		Node* _pObjNodeCpais;
-		Node* _pObjNodeCpf;
-		Node* _pObjNodeCrt;
-		Node* _pObjNodeEnderemit;
-		Node* _pObjNodeFone;
-		Node* _pObjNodeIe;
-		Node* _pObjNodeIest;
-		Node* _pObjNodeIm;
-		Node* _pObjNodeNro;
-		Node* _pObjNodeUf;
-		Node* _pObjNodeX;
-		Node* _pObjNodeXbairro;
-		Node* _pObjNodeXcpl;
-		Node* _pObjNodeXfant;
-		Node* _pObjNodeXlgr;
-		Node* _pObjNodeXmun;
-		Node* _pObjNodeXnome;
-		Node* _pObjNodeXpais;
+		Node* _pNdeCep;
+		Node* _pNdeCmun;
+		Node* _pNdeCnae;
+		Node* _pNdeCnpj;
+		Node* _pNdeCpais;
+		Node* _pNdeCpf;
+		Node* _pNdeCrt;
+		Node* _pNdeEnderemit;
+		Node* _pNdeFone;
+		Node* _pNdeIe;
+		Node* _pNdeIest;
+		Node* _pNdeIm;
+		Node* _pNdeNro;
+		Node* _pNdeUf;
+		Node* _pNdeX;
+		Node* _pNdeXbairro;
+		Node* _pNdeXcpl;
+		Node* _pNdeXfant;
+		Node* _pNdeXlgr;
+		Node* _pNdeXmun;
+		Node* _pNdeXnome;
+		Node* _pNdeXpais;
 
-		Node* getPObjNodeCep();
-		Node* getPObjNodeCmun();
-		Node* getPObjNodeCnae();
-		Node* getPObjNodeCnpj();
-		Node* getPObjNodeCpais();
-		Node* getPObjNodeCpf();
-		Node* getPObjNodeCrt();
-		Node* getPObjNodeEnderemit();
-		Node* getPObjNodeFone();
-		Node* getPObjNodeIe();
-		Node* getPObjNodeIest();
-		Node* getPObjNodeIm();
-		Node* getPObjNodeNro();
-		Node* getPObjNodeUf();
-		Node* getPObjNodeX();
-		Node* getPObjNodeXbairro();
-		Node* getPObjNodeXcpl();
-		Node* getPObjNodeXfant();
-		Node* getPObjNodeXlgr();
-		Node* getPObjNodeXmun();
-		Node* getPObjNodeXnome();
-		Node* getPObjNodeXpais();
+		Node* getPNdeCep();
+		Node* getPNdeCmun();
+		Node* getPNdeCnae();
+		Node* getPNdeCnpj();
+		Node* getPNdeCpais();
+		Node* getPNdeCpf();
+		Node* getPNdeCrt();
+		Node* getPNdeEnderemit();
+		Node* getPNdeFone();
+		Node* getPNdeIe();
+		Node* getPNdeIest();
+		Node* getPNdeIm();
+		Node* getPNdeNro();
+		Node* getPNdeUf();
+		Node* getPNdeX();
+		Node* getPNdeXbairro();
+		Node* getPNdeXcpl();
+		Node* getPNdeXfant();
+		Node* getPNdeXlgr();
+		Node* getPNdeXmun();
+		Node* getPNdeXnome();
+		Node* getPNdeXpais();
 	};
 }

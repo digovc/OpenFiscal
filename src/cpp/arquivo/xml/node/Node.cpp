@@ -4,9 +4,9 @@ using namespace std;
 
 using namespace OpenFiscal_arquivo_xml_node;
 
-Node::Node(Node* pObjNodePai)
+Node::Node(Node* pNdePai)
 {
-	this->setPObjNodePai(pObjNodePai);
+	this->setPNdePai(pNdePai);
 }
 
 Node::~Node()
@@ -59,9 +59,9 @@ int Node::getIntValor()
 	return _intValor;
 }
 
-Node* Node::getPObjNodePai()
+Node* Node::getPNdePai()
 {
-	return _pObjNodePai;
+	return _pNdePai;
 }
 
 string Node::getStrIdentificador()
@@ -119,9 +119,9 @@ void Node::setIntValor(int intValor)
 	this->setStrValor(to_string(_intValor));
 }
 
-void Node::setPObjNodePai(Node* pObjNodePai)
+void Node::setPNdePai(Node* pNdePai)
 {
-	_pObjNodePai = pObjNodePai;
+	_pNdePai = pNdePai;
 }
 
 void Node::setStrIdentificador(string strIdentificador)

@@ -22,7 +22,7 @@ namespace OpenFiscal_arquivo_xml
 		ArquivoXml();
 		~ArquivoXml();
 
-		vector<Node*> getLstPObjNode();
+		vector<Node*> getLstPNde();
 
 		virtual void carregarDados();
 
@@ -35,7 +35,7 @@ namespace OpenFiscal_arquivo_xml
 
 	private:
 
-		vector<Node*> _lstPObjNode;
+		vector<Node*> _lstPNde;
 		xml_document<>* _xmlDoc;
 
 		xml_document<>* getXmlDoc();

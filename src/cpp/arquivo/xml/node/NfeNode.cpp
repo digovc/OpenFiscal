@@ -2,7 +2,7 @@
 
 using namespace OpenFiscal_arquivo_xml_node;
 
-NfeNode::NfeNode(Node* pObjNodePai) :Node(pObjNodePai)
+NfeNode::NfeNode(Node* pNdePai) :Node(pNdePai)
 {
 	this->setEnmElementoTipo(RAIZ);
 	this->setEnmValorTipo(NENHUM);
@@ -19,595 +19,595 @@ NfeNode::~NfeNode()
 	// TODO: Deletar objetos criados.
 }
 
-Node* NfeNode::getPObjNodeCdv()
+Node* NfeNode::getPNdeCdv()
 {
-	if (_pObjNodeCdv != nullptr)
+	if (_pNdeCdv != nullptr)
 	{
-		return _pObjNodeCdv;
+		return _pNdeCdv;
 	}
 
-	_pObjNodeCdv = new Node(this->getPObjNodeIde());
+	_pNdeCdv = new Node(this->getPNdeIde());
 
-	_pObjNodeCdv->setEnmElementoTipo(ELEMENTO);
-	_pObjNodeCdv->setEnmValorTipo(NUMERICO);
-	_pObjNodeCdv->setIntOcorrenciaMax(1);
-	_pObjNodeCdv->setIntOcorrenciaMin(1);
-	_pObjNodeCdv->setIntTamanhoMax(1);
-	_pObjNodeCdv->setIntTamanhoMin(1);
-	_pObjNodeCdv->setStrIdentificador("B23");
-	_pObjNodeCdv->setStrNome("cDV");
+	_pNdeCdv->setEnmElementoTipo(ELEMENTO);
+	_pNdeCdv->setEnmValorTipo(NUMERICO);
+	_pNdeCdv->setIntOcorrenciaMax(1);
+	_pNdeCdv->setIntOcorrenciaMin(1);
+	_pNdeCdv->setIntTamanhoMax(1);
+	_pNdeCdv->setIntTamanhoMin(1);
+	_pNdeCdv->setStrIdentificador("B23");
+	_pNdeCdv->setStrNome("cDV");
 
-	return _pObjNodeCdv;
+	return _pNdeCdv;
 }
 
-Node* NfeNode::getPObjNodeCmunfg()
+Node* NfeNode::getPNdeCmunfg()
 {
-	if (_pObjNodeCmunfg != nullptr)
+	if (_pNdeCmunfg != nullptr)
 	{
-		return _pObjNodeCmunfg;
+		return _pNdeCmunfg;
 	}
 
-	_pObjNodeCmunfg = new Node(this->getPObjNodeIde());
+	_pNdeCmunfg = new Node(this->getPNdeIde());
 
-	_pObjNodeCmunfg->setEnmElementoTipo(ELEMENTO);
-	_pObjNodeCmunfg->setEnmValorTipo(NUMERICO);
-	_pObjNodeCmunfg->setIntOcorrenciaMax(1);
-	_pObjNodeCmunfg->setIntOcorrenciaMin(1);
-	_pObjNodeCmunfg->setIntTamanhoMax(7);
-	_pObjNodeCmunfg->setIntTamanhoMin(7);
-	_pObjNodeCmunfg->setStrIdentificador("B12");
-	_pObjNodeCmunfg->setStrNome("cMunFG");
+	_pNdeCmunfg->setEnmElementoTipo(ELEMENTO);
+	_pNdeCmunfg->setEnmValorTipo(NUMERICO);
+	_pNdeCmunfg->setIntOcorrenciaMax(1);
+	_pNdeCmunfg->setIntOcorrenciaMin(1);
+	_pNdeCmunfg->setIntTamanhoMax(7);
+	_pNdeCmunfg->setIntTamanhoMin(7);
+	_pNdeCmunfg->setStrIdentificador("B12");
+	_pNdeCmunfg->setStrNome("cMunFG");
 
-	return _pObjNodeCmunfg;
+	return _pNdeCmunfg;
 }
 
-Node* NfeNode::getPObjNodeCnf()
+Node* NfeNode::getPNdeCnf()
 {
-	if (_pObjNodeCnf != nullptr)
+	if (_pNdeCnf != nullptr)
 	{
-		return _pObjNodeCnf;
+		return _pNdeCnf;
 	}
 
-	_pObjNodeCnf = new Node(this->getPObjNodeIde());
+	_pNdeCnf = new Node(this->getPNdeIde());
 
-	_pObjNodeCnf->setEnmElementoTipo(ELEMENTO);
-	_pObjNodeCnf->setEnmValorTipo(NUMERICO);
-	_pObjNodeCnf->setIntOcorrenciaMax(1);
-	_pObjNodeCnf->setIntOcorrenciaMin(1);
-	_pObjNodeCnf->setIntTamanhoMax(8);
-	_pObjNodeCnf->setIntTamanhoMin(8);
-	_pObjNodeCnf->setStrIdentificador("B03");
-	_pObjNodeCnf->setStrNome("cNF");
+	_pNdeCnf->setEnmElementoTipo(ELEMENTO);
+	_pNdeCnf->setEnmValorTipo(NUMERICO);
+	_pNdeCnf->setIntOcorrenciaMax(1);
+	_pNdeCnf->setIntOcorrenciaMin(1);
+	_pNdeCnf->setIntTamanhoMax(8);
+	_pNdeCnf->setIntTamanhoMin(8);
+	_pNdeCnf->setStrIdentificador("B03");
+	_pNdeCnf->setStrNome("cNF");
 
-	return _pObjNodeCnf;
+	return _pNdeCnf;
 }
 
-Node* NfeNode::getPObjNodeCuf()
+Node* NfeNode::getPNdeCuf()
 {
-	if (_pObjNodeCuf != nullptr)
+	if (_pNdeCuf != nullptr)
 	{
-		return _pObjNodeCuf;
+		return _pNdeCuf;
 	}
 
-	_pObjNodeCuf = new Node(this->getPObjNodeIde());
+	_pNdeCuf = new Node(this->getPNdeIde());
 
-	_pObjNodeCuf->setEnmElementoTipo(ELEMENTO);
-	_pObjNodeCuf->setEnmValorTipo(NUMERICO);
-	_pObjNodeCuf->setIntOcorrenciaMax(1);
-	_pObjNodeCuf->setIntOcorrenciaMin(1);
-	_pObjNodeCuf->setIntTamanhoMax(2);
-	_pObjNodeCuf->setIntTamanhoMin(2);
-	_pObjNodeCuf->setStrIdentificador("B02");
-	_pObjNodeCuf->setStrNome("cUF");
+	_pNdeCuf->setEnmElementoTipo(ELEMENTO);
+	_pNdeCuf->setEnmValorTipo(NUMERICO);
+	_pNdeCuf->setIntOcorrenciaMax(1);
+	_pNdeCuf->setIntOcorrenciaMin(1);
+	_pNdeCuf->setIntTamanhoMax(2);
+	_pNdeCuf->setIntTamanhoMin(2);
+	_pNdeCuf->setStrIdentificador("B02");
+	_pNdeCuf->setStrNome("cUF");
 
-	return _pObjNodeCuf;
+	return _pNdeCuf;
 }
 
-Node* NfeNode::getPObjNodeDhcont()
+Node* NfeNode::getPNdeDhcont()
 {
-	if (_pObjNodeDhcont != nullptr)
+	if (_pNdeDhcont != nullptr)
 	{
-		return _pObjNodeDhcont;
+		return _pNdeDhcont;
 	}
 
-	_pObjNodeDhcont = new Node(this->getPObjNodeX());
+	_pNdeDhcont = new Node(this->getPNdeX());
 
-	_pObjNodeDhcont->setEnmElementoTipo(ELEMENTO);
-	_pObjNodeDhcont->setEnmValorTipo(DATA_HORA);
-	_pObjNodeDhcont->setIntOcorrenciaMax(1);
-	_pObjNodeDhcont->setIntOcorrenciaMin(1);
-	_pObjNodeDhcont->setIntTamanhoMax(-1);
-	_pObjNodeDhcont->setIntTamanhoMin(-1);
-	_pObjNodeDhcont->setStrIdentificador("B28");
-	_pObjNodeDhcont->setStrNome("dhCont");
+	_pNdeDhcont->setEnmElementoTipo(ELEMENTO);
+	_pNdeDhcont->setEnmValorTipo(DATA_HORA);
+	_pNdeDhcont->setIntOcorrenciaMax(1);
+	_pNdeDhcont->setIntOcorrenciaMin(1);
+	_pNdeDhcont->setIntTamanhoMax(-1);
+	_pNdeDhcont->setIntTamanhoMin(-1);
+	_pNdeDhcont->setStrIdentificador("B28");
+	_pNdeDhcont->setStrNome("dhCont");
 
-	return _pObjNodeDhcont;
+	return _pNdeDhcont;
 }
 
-Node* NfeNode::getPObjNodeDhemi()
+Node* NfeNode::getPNdeDhemi()
 {
-	if (_pObjNodeDhemi != nullptr)
+	if (_pNdeDhemi != nullptr)
 	{
-		return _pObjNodeDhemi;
+		return _pNdeDhemi;
 	}
 
-	_pObjNodeDhemi = new Node(this->getPObjNodeIde());
+	_pNdeDhemi = new Node(this->getPNdeIde());
 
-	_pObjNodeDhemi->setEnmElementoTipo(ELEMENTO);
-	_pObjNodeDhemi->setEnmValorTipo(DATA_HORA);
-	_pObjNodeDhemi->setIntOcorrenciaMax(1);
-	_pObjNodeDhemi->setIntOcorrenciaMin(1);
-	_pObjNodeDhemi->setIntTamanhoMax(-1);
-	_pObjNodeDhemi->setIntTamanhoMin(-1);
-	_pObjNodeDhemi->setStrIdentificador("B09");
-	_pObjNodeDhemi->setStrNome("dhEmi");
+	_pNdeDhemi->setEnmElementoTipo(ELEMENTO);
+	_pNdeDhemi->setEnmValorTipo(DATA_HORA);
+	_pNdeDhemi->setIntOcorrenciaMax(1);
+	_pNdeDhemi->setIntOcorrenciaMin(1);
+	_pNdeDhemi->setIntTamanhoMax(-1);
+	_pNdeDhemi->setIntTamanhoMin(-1);
+	_pNdeDhemi->setStrIdentificador("B09");
+	_pNdeDhemi->setStrNome("dhEmi");
 
-	return _pObjNodeDhemi;
+	return _pNdeDhemi;
 }
 
-Node* NfeNode::getPObjNodeDhsaient()
+Node* NfeNode::getPNdeDhsaient()
 {
-	if (_pObjNodeDhsaient != nullptr)
+	if (_pNdeDhsaient != nullptr)
 	{
-		return _pObjNodeDhsaient;
+		return _pNdeDhsaient;
 	}
 
-	_pObjNodeDhsaient = new Node(this->getPObjNodeIde());
+	_pNdeDhsaient = new Node(this->getPNdeIde());
 
-	_pObjNodeDhsaient->setEnmElementoTipo(ELEMENTO);
-	_pObjNodeDhsaient->setEnmValorTipo(DATA_HORA);
-	_pObjNodeDhsaient->setIntOcorrenciaMax(1);
-	_pObjNodeDhsaient->setIntOcorrenciaMin(0);
-	_pObjNodeDhsaient->setIntTamanhoMax(10);
-	_pObjNodeDhsaient->setIntTamanhoMin(10);
-	_pObjNodeDhsaient->setStrIdentificador("B10");
-	_pObjNodeDhsaient->setStrNome("dhSaiEnt");
+	_pNdeDhsaient->setEnmElementoTipo(ELEMENTO);
+	_pNdeDhsaient->setEnmValorTipo(DATA_HORA);
+	_pNdeDhsaient->setIntOcorrenciaMax(1);
+	_pNdeDhsaient->setIntOcorrenciaMin(0);
+	_pNdeDhsaient->setIntTamanhoMax(10);
+	_pNdeDhsaient->setIntTamanhoMin(10);
+	_pNdeDhsaient->setStrIdentificador("B10");
+	_pNdeDhsaient->setStrNome("dhSaiEnt");
 
-	return _pObjNodeDhsaient;
+	return _pNdeDhsaient;
 }
 
-Node* NfeNode::getPObjNodeFinnfe()
+Node* NfeNode::getPNdeFinnfe()
 {
-	if (_pObjNodeFinnfe != nullptr)
+	if (_pNdeFinnfe != nullptr)
 	{
-		return _pObjNodeFinnfe;
+		return _pNdeFinnfe;
 	}
 
-	_pObjNodeFinnfe = new Node(this->getPObjNodeIde());
+	_pNdeFinnfe = new Node(this->getPNdeIde());
 
-	_pObjNodeFinnfe->setEnmElementoTipo(ELEMENTO);
-	_pObjNodeFinnfe->setEnmValorTipo(NUMERICO);
-	_pObjNodeFinnfe->setIntOcorrenciaMax(1);
-	_pObjNodeFinnfe->setIntOcorrenciaMin(1);
-	_pObjNodeFinnfe->setIntTamanhoMax(1);
-	_pObjNodeFinnfe->setIntTamanhoMin(1);
-	_pObjNodeFinnfe->setStrIdentificador("B25");
-	_pObjNodeFinnfe->setStrNome("finNFe");
+	_pNdeFinnfe->setEnmElementoTipo(ELEMENTO);
+	_pNdeFinnfe->setEnmValorTipo(NUMERICO);
+	_pNdeFinnfe->setIntOcorrenciaMax(1);
+	_pNdeFinnfe->setIntOcorrenciaMin(1);
+	_pNdeFinnfe->setIntTamanhoMax(1);
+	_pNdeFinnfe->setIntTamanhoMin(1);
+	_pNdeFinnfe->setStrIdentificador("B25");
+	_pNdeFinnfe->setStrNome("finNFe");
 
-	return _pObjNodeFinnfe;
+	return _pNdeFinnfe;
 }
 
-Node* NfeNode::getPObjNodeId()
+Node* NfeNode::getPNdeId()
 {
-	if (_pObjNodeId != nullptr)
+	if (_pNdeId != nullptr)
 	{
-		return _pObjNodeId;
+		return _pNdeId;
 	}
 
-	_pObjNodeId = new Node(this->getPObjNodeInfnfe());
+	_pNdeId = new Node(this->getPNdeInfnfe());
 
-	_pObjNodeId->setEnmElementoTipo(ID);
-	_pObjNodeId->setEnmValorTipo(ALFANUMERICO);
-	_pObjNodeId->setIntOcorrenciaMax(1);
-	_pObjNodeId->setIntOcorrenciaMin(1);
-	_pObjNodeId->setIntTamanhoMax(47);
-	_pObjNodeId->setIntTamanhoMin(47);
-	_pObjNodeId->setStrIdentificador("A03");
-	_pObjNodeId->setStrNome("Id");
+	_pNdeId->setEnmElementoTipo(ID);
+	_pNdeId->setEnmValorTipo(ALFANUMERICO);
+	_pNdeId->setIntOcorrenciaMax(1);
+	_pNdeId->setIntOcorrenciaMin(1);
+	_pNdeId->setIntTamanhoMax(47);
+	_pNdeId->setIntTamanhoMin(47);
+	_pNdeId->setStrIdentificador("A03");
+	_pNdeId->setStrNome("Id");
 
-	return _pObjNodeId;
+	return _pNdeId;
 }
 
-Node* NfeNode::getPObjNodeIddest()
+Node* NfeNode::getPNdeIddest()
 {
-	if (_pObjNodeIddest != nullptr)
+	if (_pNdeIddest != nullptr)
 	{
-		return _pObjNodeIddest;
+		return _pNdeIddest;
 	}
 
-	_pObjNodeIddest = new Node(this->getPObjNodeIde());
+	_pNdeIddest = new Node(this->getPNdeIde());
 
-	_pObjNodeIddest->setEnmElementoTipo(ELEMENTO);
-	_pObjNodeIddest->setEnmValorTipo(NUMERICO);
-	_pObjNodeIddest->setIntOcorrenciaMax(1);
-	_pObjNodeIddest->setIntOcorrenciaMin(1);
-	_pObjNodeIddest->setIntTamanhoMax(1);
-	_pObjNodeIddest->setIntTamanhoMin(1);
-	_pObjNodeIddest->setStrIdentificador("B11a");
-	_pObjNodeIddest->setStrNome("idDest");
+	_pNdeIddest->setEnmElementoTipo(ELEMENTO);
+	_pNdeIddest->setEnmValorTipo(NUMERICO);
+	_pNdeIddest->setIntOcorrenciaMax(1);
+	_pNdeIddest->setIntOcorrenciaMin(1);
+	_pNdeIddest->setIntTamanhoMax(1);
+	_pNdeIddest->setIntTamanhoMin(1);
+	_pNdeIddest->setStrIdentificador("B11a");
+	_pNdeIddest->setStrNome("idDest");
 
-	return _pObjNodeIddest;
+	return _pNdeIddest;
 }
 
-Node* NfeNode::getPObjNodeIde()
+Node* NfeNode::getPNdeIde()
 {
-	if (_pObjNodeId != nullptr)
+	if (_pNdeId != nullptr)
 	{
-		return _pObjNodeId;
+		return _pNdeId;
 	}
 
-	_pObjNodeId = new Node(this->getPObjNodeInfnfe());
+	_pNdeId = new Node(this->getPNdeInfnfe());
 
-	_pObjNodeId->setEnmElementoTipo(GRUPO);
-	_pObjNodeId->setEnmValorTipo(NENHUM);
-	_pObjNodeId->setIntOcorrenciaMax(1);
-	_pObjNodeId->setIntOcorrenciaMin(1);
-	_pObjNodeId->setIntTamanhoMax(-1);
-	_pObjNodeId->setIntTamanhoMin(-1);
-	_pObjNodeId->setStrIdentificador("B01");
-	_pObjNodeId->setStrNome("ide");
+	_pNdeId->setEnmElementoTipo(GRUPO);
+	_pNdeId->setEnmValorTipo(NENHUM);
+	_pNdeId->setIntOcorrenciaMax(1);
+	_pNdeId->setIntOcorrenciaMin(1);
+	_pNdeId->setIntTamanhoMax(-1);
+	_pNdeId->setIntTamanhoMin(-1);
+	_pNdeId->setStrIdentificador("B01");
+	_pNdeId->setStrNome("ide");
 
-	return _pObjNodeId;
+	return _pNdeId;
 }
 
-Node* NfeNode::getPObjNodeIndfinal()
+Node* NfeNode::getPNdeIndfinal()
 {
-	if (_pObjNodeIndfinal != nullptr)
+	if (_pNdeIndfinal != nullptr)
 	{
-		return _pObjNodeIndfinal;
+		return _pNdeIndfinal;
 	}
 
-	_pObjNodeIndfinal = new Node(this->getPObjNodeIde());
+	_pNdeIndfinal = new Node(this->getPNdeIde());
 
-	_pObjNodeIndfinal->setEnmElementoTipo(ELEMENTO);
-	_pObjNodeIndfinal->setEnmValorTipo(NUMERICO);
-	_pObjNodeIndfinal->setIntOcorrenciaMax(1);
-	_pObjNodeIndfinal->setIntOcorrenciaMin(1);
-	_pObjNodeIndfinal->setIntTamanhoMax(1);
-	_pObjNodeIndfinal->setIntTamanhoMin(1);
-	_pObjNodeIndfinal->setStrIdentificador("B25a");
-	_pObjNodeIndfinal->setStrNome("indFinal");
+	_pNdeIndfinal->setEnmElementoTipo(ELEMENTO);
+	_pNdeIndfinal->setEnmValorTipo(NUMERICO);
+	_pNdeIndfinal->setIntOcorrenciaMax(1);
+	_pNdeIndfinal->setIntOcorrenciaMin(1);
+	_pNdeIndfinal->setIntTamanhoMax(1);
+	_pNdeIndfinal->setIntTamanhoMin(1);
+	_pNdeIndfinal->setStrIdentificador("B25a");
+	_pNdeIndfinal->setStrNome("indFinal");
 
-	return _pObjNodeIndfinal;
+	return _pNdeIndfinal;
 }
 
-Node* NfeNode::getPObjNodeIndpag()
+Node* NfeNode::getPNdeIndpag()
 {
-	if (_pObjNodeIndpag != nullptr)
+	if (_pNdeIndpag != nullptr)
 	{
-		return _pObjNodeIndpag;
+		return _pNdeIndpag;
 	}
 
-	_pObjNodeIndpag = new Node(this->getPObjNodeIde());
+	_pNdeIndpag = new Node(this->getPNdeIde());
 
-	_pObjNodeIndpag->setEnmElementoTipo(ELEMENTO);
-	_pObjNodeIndpag->setEnmValorTipo(NUMERICO);
-	_pObjNodeIndpag->setIntOcorrenciaMax(1);
-	_pObjNodeIndpag->setIntOcorrenciaMin(1);
-	_pObjNodeIndpag->setIntTamanhoMax(1);
-	_pObjNodeIndpag->setIntTamanhoMin(1);
-	_pObjNodeIndpag->setStrIdentificador("B05");
-	_pObjNodeIndpag->setStrNome("indPag");
+	_pNdeIndpag->setEnmElementoTipo(ELEMENTO);
+	_pNdeIndpag->setEnmValorTipo(NUMERICO);
+	_pNdeIndpag->setIntOcorrenciaMax(1);
+	_pNdeIndpag->setIntOcorrenciaMin(1);
+	_pNdeIndpag->setIntTamanhoMax(1);
+	_pNdeIndpag->setIntTamanhoMin(1);
+	_pNdeIndpag->setStrIdentificador("B05");
+	_pNdeIndpag->setStrNome("indPag");
 
-	return _pObjNodeIndpag;
+	return _pNdeIndpag;
 }
 
-Node* NfeNode::getPObjNodeIndpres()
+Node* NfeNode::getPNdeIndpres()
 {
-	if (_pObjNodeIndpres != nullptr)
+	if (_pNdeIndpres != nullptr)
 	{
-		return _pObjNodeIndpres;
+		return _pNdeIndpres;
 	}
 
-	_pObjNodeIndpres = new Node(this->getPObjNodeIde());
+	_pNdeIndpres = new Node(this->getPNdeIde());
 
-	_pObjNodeIndpres->setEnmElementoTipo(ELEMENTO);
-	_pObjNodeIndpres->setEnmValorTipo(NUMERICO);
-	_pObjNodeIndpres->setIntOcorrenciaMax(1);
-	_pObjNodeIndpres->setIntOcorrenciaMin(1);
-	_pObjNodeIndpres->setIntTamanhoMax(1);
-	_pObjNodeIndpres->setIntTamanhoMin(1);
-	_pObjNodeIndpres->setStrIdentificador("B25b");
-	_pObjNodeIndpres->setStrNome("indPres");
+	_pNdeIndpres->setEnmElementoTipo(ELEMENTO);
+	_pNdeIndpres->setEnmValorTipo(NUMERICO);
+	_pNdeIndpres->setIntOcorrenciaMax(1);
+	_pNdeIndpres->setIntOcorrenciaMin(1);
+	_pNdeIndpres->setIntTamanhoMax(1);
+	_pNdeIndpres->setIntTamanhoMin(1);
+	_pNdeIndpres->setStrIdentificador("B25b");
+	_pNdeIndpres->setStrNome("indPres");
 
-	return _pObjNodeIndpres;
+	return _pNdeIndpres;
 }
 
-Node* NfeNode::getPObjNodeInfnfe()
+Node* NfeNode::getPNdeInfnfe()
 {
-	if (_pObjNodeInfnfe != nullptr)
+	if (_pNdeInfnfe != nullptr)
 	{
-		return _pObjNodeInfnfe;
+		return _pNdeInfnfe;
 	}
 
-	_pObjNodeInfnfe = new Node(this);
+	_pNdeInfnfe = new Node(this);
 
-	_pObjNodeInfnfe->setEnmElementoTipo(GRUPO);
-	_pObjNodeInfnfe->setEnmValorTipo(NENHUM);
-	_pObjNodeInfnfe->setIntOcorrenciaMax(1);
-	_pObjNodeInfnfe->setIntOcorrenciaMin(1);
-	_pObjNodeInfnfe->setIntTamanhoMax(-1);
-	_pObjNodeInfnfe->setIntTamanhoMin(-1);
-	_pObjNodeInfnfe->setStrIdentificador("A01");
-	_pObjNodeInfnfe->setStrNome("infNFe");
+	_pNdeInfnfe->setEnmElementoTipo(GRUPO);
+	_pNdeInfnfe->setEnmValorTipo(NENHUM);
+	_pNdeInfnfe->setIntOcorrenciaMax(1);
+	_pNdeInfnfe->setIntOcorrenciaMin(1);
+	_pNdeInfnfe->setIntTamanhoMax(-1);
+	_pNdeInfnfe->setIntTamanhoMin(-1);
+	_pNdeInfnfe->setStrIdentificador("A01");
+	_pNdeInfnfe->setStrNome("infNFe");
 
-	return _pObjNodeInfnfe;
+	return _pNdeInfnfe;
 }
 
-Node* NfeNode::getPObjNodeMod()
+Node* NfeNode::getPNdeMod()
 {
-	if (_pObjNodeMod != nullptr)
+	if (_pNdeMod != nullptr)
 	{
-		return _pObjNodeMod;
+		return _pNdeMod;
 	}
 
-	_pObjNodeMod = new Node(this->getPObjNodeIde());
+	_pNdeMod = new Node(this->getPNdeIde());
 
-	_pObjNodeMod->setEnmElementoTipo(ELEMENTO);
-	_pObjNodeMod->setEnmValorTipo(ALFANUMERICO);
-	_pObjNodeMod->setIntOcorrenciaMax(1);
-	_pObjNodeMod->setIntOcorrenciaMin(1);
-	_pObjNodeMod->setIntTamanhoMax(2);
-	_pObjNodeMod->setIntTamanhoMin(2);
-	_pObjNodeMod->setStrIdentificador("B06");
-	_pObjNodeMod->setStrNome("mod");
+	_pNdeMod->setEnmElementoTipo(ELEMENTO);
+	_pNdeMod->setEnmValorTipo(ALFANUMERICO);
+	_pNdeMod->setIntOcorrenciaMax(1);
+	_pNdeMod->setIntOcorrenciaMin(1);
+	_pNdeMod->setIntTamanhoMax(2);
+	_pNdeMod->setIntTamanhoMin(2);
+	_pNdeMod->setStrIdentificador("B06");
+	_pNdeMod->setStrNome("mod");
 
-	return _pObjNodeMod;
+	return _pNdeMod;
 }
 
-Node* NfeNode::getPObjNodeNatop()
+Node* NfeNode::getPNdeNatop()
 {
-	if (_pObjNodeNatop != nullptr)
+	if (_pNdeNatop != nullptr)
 	{
-		return _pObjNodeNatop;
+		return _pNdeNatop;
 	}
 
-	_pObjNodeNatop = new Node(this->getPObjNodeIde());
+	_pNdeNatop = new Node(this->getPNdeIde());
 
-	_pObjNodeNatop->setEnmElementoTipo(ELEMENTO);
-	_pObjNodeNatop->setEnmValorTipo(ALFANUMERICO);
-	_pObjNodeNatop->setIntOcorrenciaMax(1);
-	_pObjNodeNatop->setIntOcorrenciaMin(1);
-	_pObjNodeNatop->setIntTamanhoMax(60);
-	_pObjNodeNatop->setIntTamanhoMin(1);
-	_pObjNodeNatop->setStrIdentificador("B04");
-	_pObjNodeNatop->setStrNome("natOp");
+	_pNdeNatop->setEnmElementoTipo(ELEMENTO);
+	_pNdeNatop->setEnmValorTipo(ALFANUMERICO);
+	_pNdeNatop->setIntOcorrenciaMax(1);
+	_pNdeNatop->setIntOcorrenciaMin(1);
+	_pNdeNatop->setIntTamanhoMax(60);
+	_pNdeNatop->setIntTamanhoMin(1);
+	_pNdeNatop->setStrIdentificador("B04");
+	_pNdeNatop->setStrNome("natOp");
 
-	return _pObjNodeNatop;
+	return _pNdeNatop;
 }
 
-Node* NfeNode::getPObjNodeNnf()
+Node* NfeNode::getPNdeNnf()
 {
-	if (_pObjNodeNnf != nullptr)
+	if (_pNdeNnf != nullptr)
 	{
-		return _pObjNodeNnf;
+		return _pNdeNnf;
 	}
 
-	_pObjNodeNnf = new Node(this->getPObjNodeIde());
+	_pNdeNnf = new Node(this->getPNdeIde());
 
-	_pObjNodeNnf->setEnmElementoTipo(ELEMENTO);
-	_pObjNodeNnf->setEnmValorTipo(NUMERICO);
-	_pObjNodeNnf->setIntOcorrenciaMax(1);
-	_pObjNodeNnf->setIntOcorrenciaMin(1);
-	_pObjNodeNnf->setIntTamanhoMax(9);
-	_pObjNodeNnf->setIntTamanhoMin(1);
-	_pObjNodeNnf->setStrIdentificador("B08");
-	_pObjNodeNnf->setStrNome("nNF");
+	_pNdeNnf->setEnmElementoTipo(ELEMENTO);
+	_pNdeNnf->setEnmValorTipo(NUMERICO);
+	_pNdeNnf->setIntOcorrenciaMax(1);
+	_pNdeNnf->setIntOcorrenciaMin(1);
+	_pNdeNnf->setIntTamanhoMax(9);
+	_pNdeNnf->setIntTamanhoMin(1);
+	_pNdeNnf->setStrIdentificador("B08");
+	_pNdeNnf->setStrNome("nNF");
 
-	return _pObjNodeNnf;
+	return _pNdeNnf;
 }
 
-Node* NfeNode::getPObjNodeProcemi()
+Node* NfeNode::getPNdeProcemi()
 {
-	if (_pObjNodeProcemi != nullptr)
+	if (_pNdeProcemi != nullptr)
 	{
-		return _pObjNodeProcemi;
+		return _pNdeProcemi;
 	}
 
-	_pObjNodeProcemi = new Node(this->getPObjNodeIde());
+	_pNdeProcemi = new Node(this->getPNdeIde());
 
-	_pObjNodeProcemi->setEnmElementoTipo(ELEMENTO);
-	_pObjNodeProcemi->setEnmValorTipo(NUMERICO);
-	_pObjNodeProcemi->setIntOcorrenciaMax(1);
-	_pObjNodeProcemi->setIntOcorrenciaMin(1);
-	_pObjNodeProcemi->setIntTamanhoMax(1);
-	_pObjNodeProcemi->setIntTamanhoMin(1);
-	_pObjNodeProcemi->setStrIdentificador("B26");
-	_pObjNodeProcemi->setStrNome("procEmi");
+	_pNdeProcemi->setEnmElementoTipo(ELEMENTO);
+	_pNdeProcemi->setEnmValorTipo(NUMERICO);
+	_pNdeProcemi->setIntOcorrenciaMax(1);
+	_pNdeProcemi->setIntOcorrenciaMin(1);
+	_pNdeProcemi->setIntTamanhoMax(1);
+	_pNdeProcemi->setIntTamanhoMin(1);
+	_pNdeProcemi->setStrIdentificador("B26");
+	_pNdeProcemi->setStrNome("procEmi");
 
-	return _pObjNodeProcemi;
+	return _pNdeProcemi;
 }
 
-Node* NfeNode::getPObjNodeSerie()
+Node* NfeNode::getPNdeSerie()
 {
-	if (_pObjNodeSerie != nullptr)
+	if (_pNdeSerie != nullptr)
 	{
-		return _pObjNodeSerie;
+		return _pNdeSerie;
 	}
 
-	_pObjNodeSerie = new Node(this->getPObjNodeIde());
+	_pNdeSerie = new Node(this->getPNdeIde());
 
-	_pObjNodeSerie->setEnmElementoTipo(ELEMENTO);
-	_pObjNodeSerie->setEnmValorTipo(NUMERICO);
-	_pObjNodeSerie->setIntOcorrenciaMax(1);
-	_pObjNodeSerie->setIntOcorrenciaMin(1);
-	_pObjNodeSerie->setIntTamanhoMax(3);
-	_pObjNodeSerie->setIntTamanhoMin(1);
-	_pObjNodeSerie->setStrIdentificador("B07");
-	_pObjNodeSerie->setStrNome("serie");
+	_pNdeSerie->setEnmElementoTipo(ELEMENTO);
+	_pNdeSerie->setEnmValorTipo(NUMERICO);
+	_pNdeSerie->setIntOcorrenciaMax(1);
+	_pNdeSerie->setIntOcorrenciaMin(1);
+	_pNdeSerie->setIntTamanhoMax(3);
+	_pNdeSerie->setIntTamanhoMin(1);
+	_pNdeSerie->setStrIdentificador("B07");
+	_pNdeSerie->setStrNome("serie");
 
-	return _pObjNodeSerie;
+	return _pNdeSerie;
 }
 
-Node* NfeNode::getPObjNodeTpamb()
+Node* NfeNode::getPNdeTpamb()
 {
-	if (_pObjNodeTpamb != nullptr)
+	if (_pNdeTpamb != nullptr)
 	{
-		return _pObjNodeTpamb;
+		return _pNdeTpamb;
 	}
 
-	_pObjNodeTpamb = new Node(this->getPObjNodeIde());
+	_pNdeTpamb = new Node(this->getPNdeIde());
 
-	_pObjNodeTpamb->setEnmElementoTipo(ELEMENTO);
-	_pObjNodeTpamb->setEnmValorTipo(NUMERICO);
-	_pObjNodeTpamb->setIntOcorrenciaMax(1);
-	_pObjNodeTpamb->setIntOcorrenciaMin(1);
-	_pObjNodeTpamb->setIntTamanhoMax(1);
-	_pObjNodeTpamb->setIntTamanhoMin(1);
-	_pObjNodeTpamb->setStrIdentificador("B24");
-	_pObjNodeTpamb->setStrNome("tpAmb");
+	_pNdeTpamb->setEnmElementoTipo(ELEMENTO);
+	_pNdeTpamb->setEnmValorTipo(NUMERICO);
+	_pNdeTpamb->setIntOcorrenciaMax(1);
+	_pNdeTpamb->setIntOcorrenciaMin(1);
+	_pNdeTpamb->setIntTamanhoMax(1);
+	_pNdeTpamb->setIntTamanhoMin(1);
+	_pNdeTpamb->setStrIdentificador("B24");
+	_pNdeTpamb->setStrNome("tpAmb");
 
-	return _pObjNodeTpamb;
+	return _pNdeTpamb;
 }
 
-Node* NfeNode::getPObjNodeTpemis()
+Node* NfeNode::getPNdeTpemis()
 {
-	if (_pObjNodeTpemis != nullptr)
+	if (_pNdeTpemis != nullptr)
 	{
-		return _pObjNodeTpemis;
+		return _pNdeTpemis;
 	}
 
-	_pObjNodeTpemis = new Node(this->getPObjNodeIde());
+	_pNdeTpemis = new Node(this->getPNdeIde());
 
-	_pObjNodeTpemis->setEnmElementoTipo(ELEMENTO);
-	_pObjNodeTpemis->setEnmValorTipo(NUMERICO);
-	_pObjNodeTpemis->setIntOcorrenciaMax(1);
-	_pObjNodeTpemis->setIntOcorrenciaMin(1);
-	_pObjNodeTpemis->setIntTamanhoMax(1);
-	_pObjNodeTpemis->setIntTamanhoMin(1);
-	_pObjNodeTpemis->setStrIdentificador("B22");
-	_pObjNodeTpemis->setStrNome("tpEmis");
+	_pNdeTpemis->setEnmElementoTipo(ELEMENTO);
+	_pNdeTpemis->setEnmValorTipo(NUMERICO);
+	_pNdeTpemis->setIntOcorrenciaMax(1);
+	_pNdeTpemis->setIntOcorrenciaMin(1);
+	_pNdeTpemis->setIntTamanhoMax(1);
+	_pNdeTpemis->setIntTamanhoMin(1);
+	_pNdeTpemis->setStrIdentificador("B22");
+	_pNdeTpemis->setStrNome("tpEmis");
 
-	return _pObjNodeTpemis;
+	return _pNdeTpemis;
 }
 
-Node* NfeNode::getPObjNodeTpimp()
+Node* NfeNode::getPNdeTpimp()
 {
-	if (_pObjNodeTpimp != nullptr)
+	if (_pNdeTpimp != nullptr)
 	{
-		return _pObjNodeTpimp;
+		return _pNdeTpimp;
 	}
 
-	_pObjNodeTpimp = new Node(this->getPObjNodeIde());
+	_pNdeTpimp = new Node(this->getPNdeIde());
 
-	_pObjNodeTpimp->setEnmElementoTipo(ELEMENTO);
-	_pObjNodeTpimp->setEnmValorTipo(NUMERICO);
-	_pObjNodeTpimp->setIntOcorrenciaMax(1);
-	_pObjNodeTpimp->setIntOcorrenciaMin(1);
-	_pObjNodeTpimp->setIntTamanhoMax(1);
-	_pObjNodeTpimp->setIntTamanhoMin(1);
-	_pObjNodeTpimp->setStrIdentificador("B21");
-	_pObjNodeTpimp->setStrNome("tpImp");
+	_pNdeTpimp->setEnmElementoTipo(ELEMENTO);
+	_pNdeTpimp->setEnmValorTipo(NUMERICO);
+	_pNdeTpimp->setIntOcorrenciaMax(1);
+	_pNdeTpimp->setIntOcorrenciaMin(1);
+	_pNdeTpimp->setIntTamanhoMax(1);
+	_pNdeTpimp->setIntTamanhoMin(1);
+	_pNdeTpimp->setStrIdentificador("B21");
+	_pNdeTpimp->setStrNome("tpImp");
 
-	return _pObjNodeTpimp;
+	return _pNdeTpimp;
 }
 
-Node* NfeNode::getPObjNodeTpnf()
+Node* NfeNode::getPNdeTpnf()
 {
-	if (_pObjNodeTpnf != nullptr)
+	if (_pNdeTpnf != nullptr)
 	{
-		return _pObjNodeTpnf;
+		return _pNdeTpnf;
 	}
 
-	_pObjNodeTpnf = new Node(this->getPObjNodeIde());
+	_pNdeTpnf = new Node(this->getPNdeIde());
 
-	_pObjNodeTpnf->setEnmElementoTipo(ELEMENTO);
-	_pObjNodeTpnf->setEnmValorTipo(NUMERICO);
-	_pObjNodeTpnf->setIntOcorrenciaMax(1);
-	_pObjNodeTpnf->setIntOcorrenciaMin(1);
-	_pObjNodeTpnf->setIntTamanhoMax(1);
-	_pObjNodeTpnf->setIntTamanhoMin(1);
-	_pObjNodeTpnf->setStrIdentificador("B11");
-	_pObjNodeTpnf->setStrNome("tpNF");
+	_pNdeTpnf->setEnmElementoTipo(ELEMENTO);
+	_pNdeTpnf->setEnmValorTipo(NUMERICO);
+	_pNdeTpnf->setIntOcorrenciaMax(1);
+	_pNdeTpnf->setIntOcorrenciaMin(1);
+	_pNdeTpnf->setIntTamanhoMax(1);
+	_pNdeTpnf->setIntTamanhoMin(1);
+	_pNdeTpnf->setStrIdentificador("B11");
+	_pNdeTpnf->setStrNome("tpNF");
 
-	return _pObjNodeSerie;
+	return _pNdeSerie;
 }
 
-Node* NfeNode::getPObjNodeVerproc()
+Node* NfeNode::getPNdeVerproc()
 {
-	if (_pObjNodeVerproc != nullptr)
+	if (_pNdeVerproc != nullptr)
 	{
-		return _pObjNodeVerproc;
+		return _pNdeVerproc;
 	}
 
-	_pObjNodeVerproc = new Node(this->getPObjNodeIde());
+	_pNdeVerproc = new Node(this->getPNdeIde());
 
-	_pObjNodeVerproc->setEnmElementoTipo(ELEMENTO);
-	_pObjNodeVerproc->setEnmValorTipo(ALFANUMERICO);
-	_pObjNodeVerproc->setIntOcorrenciaMax(1);
-	_pObjNodeVerproc->setIntOcorrenciaMin(1);
-	_pObjNodeVerproc->setIntTamanhoMax(20);
-	_pObjNodeVerproc->setIntTamanhoMin(1);
-	_pObjNodeVerproc->setStrIdentificador("B27");
-	_pObjNodeVerproc->setStrNome("verProc");
+	_pNdeVerproc->setEnmElementoTipo(ELEMENTO);
+	_pNdeVerproc->setEnmValorTipo(ALFANUMERICO);
+	_pNdeVerproc->setIntOcorrenciaMax(1);
+	_pNdeVerproc->setIntOcorrenciaMin(1);
+	_pNdeVerproc->setIntTamanhoMax(20);
+	_pNdeVerproc->setIntTamanhoMin(1);
+	_pNdeVerproc->setStrIdentificador("B27");
+	_pNdeVerproc->setStrNome("verProc");
 
-	return _pObjNodeVerproc;
+	return _pNdeVerproc;
 }
 
-Node* NfeNode::getPObjNodeVersao()
+Node* NfeNode::getPNdeVersao()
 {
-	if (_pObjNodeVersao != nullptr)
+	if (_pNdeVersao != nullptr)
 	{
-		return _pObjNodeVersao;
+		return _pNdeVersao;
 	}
 
-	_pObjNodeVersao = new Node(this->getPObjNodeInfnfe());
+	_pNdeVersao = new Node(this->getPNdeInfnfe());
 
-	_pObjNodeVersao->setEnmElementoTipo(A);
-	_pObjNodeVersao->setEnmValorTipo(ALFANUMERICO);
-	_pObjNodeVersao->setIntOcorrenciaMax(1);
-	_pObjNodeVersao->setIntOcorrenciaMin(1);
-	_pObjNodeVersao->setIntTamanhoMax(4);
-	_pObjNodeVersao->setIntTamanhoMin(1);
-	_pObjNodeVersao->setStrIdentificador("A02");
-	_pObjNodeVersao->setStrNome("versao");
+	_pNdeVersao->setEnmElementoTipo(A);
+	_pNdeVersao->setEnmValorTipo(ALFANUMERICO);
+	_pNdeVersao->setIntOcorrenciaMax(1);
+	_pNdeVersao->setIntOcorrenciaMin(1);
+	_pNdeVersao->setIntTamanhoMax(4);
+	_pNdeVersao->setIntTamanhoMin(1);
+	_pNdeVersao->setStrIdentificador("A02");
+	_pNdeVersao->setStrNome("versao");
 
-	return _pObjNodeVersao;
+	return _pNdeVersao;
 }
 
-Node* NfeNode::getPObjNodeX()
+Node* NfeNode::getPNdeX()
 {
-	if (_pObjNodeX != nullptr)
+	if (_pNdeX != nullptr)
 	{
-		return _pObjNodeX;
+		return _pNdeX;
 	}
 
-	_pObjNodeX = new Node(this->getPObjNodeIde());
+	_pNdeX = new Node(this->getPNdeIde());
 
-	_pObjNodeX->setEnmElementoTipo(GRUPO);
-	_pObjNodeX->setEnmValorTipo(NENHUM);
-	_pObjNodeX->setIntOcorrenciaMax(1);
-	_pObjNodeX->setIntOcorrenciaMin(0);
-	_pObjNodeX->setIntTamanhoMax(-1);
-	_pObjNodeX->setIntTamanhoMin(-1);
-	_pObjNodeX->setStrIdentificador("B27.1");
-	_pObjNodeX->setStrNome("-x-");
+	_pNdeX->setEnmElementoTipo(GRUPO);
+	_pNdeX->setEnmValorTipo(NENHUM);
+	_pNdeX->setIntOcorrenciaMax(1);
+	_pNdeX->setIntOcorrenciaMin(0);
+	_pNdeX->setIntTamanhoMax(-1);
+	_pNdeX->setIntTamanhoMin(-1);
+	_pNdeX->setStrIdentificador("B27.1");
+	_pNdeX->setStrNome("-x-");
 
-	return _pObjNodeX;
+	return _pNdeX;
 }
 
-Node* NfeNode::getPObjNodeXjust()
+Node* NfeNode::getPNdeXjust()
 {
-	if (_pObjNodeXjust != nullptr)
+	if (_pNdeXjust != nullptr)
 	{
-		return _pObjNodeXjust;
+		return _pNdeXjust;
 	}
 
-	_pObjNodeXjust = new Node(this->getPObjNodeX());
+	_pNdeXjust = new Node(this->getPNdeX());
 
-	_pObjNodeXjust->setEnmElementoTipo(ELEMENTO);
-	_pObjNodeXjust->setEnmValorTipo(ALFANUMERICO);
-	_pObjNodeXjust->setIntOcorrenciaMax(1);
-	_pObjNodeXjust->setIntOcorrenciaMin(1);
-	_pObjNodeXjust->setIntTamanhoMax(256);
-	_pObjNodeXjust->setIntTamanhoMin(15);
-	_pObjNodeXjust->setStrIdentificador("B29");
-	_pObjNodeXjust->setStrNome("xJust");
+	_pNdeXjust->setEnmElementoTipo(ELEMENTO);
+	_pNdeXjust->setEnmValorTipo(ALFANUMERICO);
+	_pNdeXjust->setIntOcorrenciaMax(1);
+	_pNdeXjust->setIntOcorrenciaMin(1);
+	_pNdeXjust->setIntTamanhoMax(256);
+	_pNdeXjust->setIntTamanhoMin(15);
+	_pNdeXjust->setStrIdentificador("B29");
+	_pNdeXjust->setStrNome("xJust");
 
-	return _pObjNodeXjust;
+	return _pNdeXjust;
 }
 
-vector<Node*> NfeNode::getLstPObjNodeNfref()
+vector<Node*> NfeNode::getLstPNdeNfref()
 {
-	return _lstPObjNodeNfref;
+	return _lstPNdeNfref;
 }

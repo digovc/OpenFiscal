@@ -14,9 +14,9 @@ void ArquivoXml::carregarDados()
 {
 }
 
-vector<Node*> ArquivoXml::getLstPObjNode()
+vector<Node*> ArquivoXml::getLstPNde()
 {
-	return _lstPObjNode;
+	return _lstPNde;
 }
 
 string ArquivoXml::getStrNamespace()

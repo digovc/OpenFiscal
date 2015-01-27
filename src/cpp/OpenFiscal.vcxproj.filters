@@ -28,6 +28,9 @@
     <Filter Include="lib\sqlite-amalgamation-3080701">
       <UniqueIdentifier>{d5a5eb67-dbbd-4733-bab3-595dd5503778}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\arquivo\xml\obj">
+      <UniqueIdentifier>{99e9c4fa-20cf-478a-ae63-6f5309d9e52c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="App.cpp">
@@ -104,6 +107,15 @@
     </ClCompile>
     <ClCompile Include="Argumento.cpp">
       <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="arquivo\xml\obj\ObjetoMain.cpp">
+      <Filter>src\arquivo\xml\obj</Filter>
+    </ClCompile>
+    <ClCompile Include="arquivo\xml\obj\Endereco.cpp">
+      <Filter>src\arquivo\xml\obj</Filter>
+    </ClCompile>
+    <ClCompile Include="arquivo\xml\obj\NotaFiscalEletronica.cpp">
+      <Filter>src\arquivo\xml\obj</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -184,6 +196,15 @@
     </ClInclude>
     <ClInclude Include="Argumento.h">
       <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="arquivo\xml\obj\ObjetoMain.h">
+      <Filter>src\arquivo\xml\obj</Filter>
+    </ClInclude>
+    <ClInclude Include="arquivo\xml\obj\Endereco.h">
+      <Filter>src\arquivo\xml\obj</Filter>
+    </ClInclude>
+    <ClInclude Include="arquivo\xml\obj\NotaFiscalEletronica.h">
+      <Filter>src\arquivo\xml\obj</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

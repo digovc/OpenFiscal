@@ -69,16 +69,16 @@ int AppOpenFiscal::inutilizarNumeracao()
 	return 0;
 }
 
-int AppOpenFiscal::carregarArg(char* argv[])
+int AppOpenFiscal::carregarArg(char* argV[])
 {
 	if (!AppOpenFiscal::validarArrChrArg())
 	{
 		return 500;
 	}
 
-	for (size_t i = 0; i < sizeof(argv) - 1; i++)
+	for (size_t i = 0; i < sizeof(argV) - 1; i++)
 	{
-		Argumento::i.getPLstPStrArgumento()->push_back(argv[i]);
+		Argumento::i.getPLstPStrArgumento()->push_back(argV[i]);
 	}
 
 	if (Argumento::i.getEnmAcaoPrincipal() == XML)
@@ -120,9 +120,9 @@ bool AppOpenFiscal::validarArrChrArg()
 	return true;
 }
 
-void main(int argc, char* argv[])
+void main(int argC, char* argV[])
 {
-	AppOpenFiscal::i.carregarArg(argv);
+	AppOpenFiscal::i.carregarArg(argV);
 	AppOpenFiscal::i.testar();
 	return;
 }

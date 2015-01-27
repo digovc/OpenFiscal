@@ -28,7 +28,7 @@ namespace OpenFiscal_arquivo_xml_node
 	{
 	public:
 
-		Node(Node* pObjNodePai);
+		Node(Node* pNdePai);
 		~Node();
 
 		void setDblValor(double dblValor);
@@ -54,7 +54,7 @@ namespace OpenFiscal_arquivo_xml_node
 		int _intTamanhoMax;
 		int _intTamanhoMin;
 		int _intValor;
-		Node* _pObjNodePai;
+		Node* _pNdePai;
 		string _strIdentificador;
 		string _strValor;
 
@@ -67,9 +67,9 @@ namespace OpenFiscal_arquivo_xml_node
 		int getIntTamanhoMax();
 		int getIntTamanhoMin();
 		int getIntValor();
-		Node* getPObjNodePai();
+		Node* getPNdePai();
 		string getStrIdentificador();
 		string getStrValor();
-		void setPObjNodePai(Node* pObjNodePai);
+		void setPNdePai(Node* pNdePai);
 	};
 }

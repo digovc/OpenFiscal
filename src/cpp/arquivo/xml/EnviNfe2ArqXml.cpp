@@ -17,102 +17,102 @@ void EnviNfe2ArqXml::carregarDados()
 {
 	ArquivoXml::carregarDados();
 
-	this->getPObjNodeVersao()->setDblValor(2.00);
-	//this->getPObjNodeIdlote()->setIntValor(???);
+	this->getPNdeVersao()->setDblValor(2.00);
+	//this->getPNdeIdlote()->setIntValor(???);
 }
 
-vector<Node*> EnviNfe2ArqXml::getLstPObjNodeNfe()
+vector<Node*> EnviNfe2ArqXml::getLstPNdeNfe()
 {
-	if (!_lstPObjNodeNfe.empty())
+	if (!_lstPNdeNfe.empty())
 	{
-		return _lstPObjNodeNfe;
+		return _lstPNdeNfe;
 	}
 
-	_lstPObjNodeNfe = vector<Node*>();
+	_lstPNdeNfe = vector<Node*>();
 
-	return _lstPObjNodeNfe;
+	return _lstPNdeNfe;
 }
 
-Node* EnviNfe2ArqXml::getPObjNodeEnvinfe()
+Node* EnviNfe2ArqXml::getPNdeEnvinfe()
 {
-	if (_pObjNodeEnvinfe != nullptr)
+	if (_pNdeEnvinfe != nullptr)
 	{
-		return _pObjNodeEnvinfe;
+		return _pNdeEnvinfe;
 	}
 
-	_pObjNodeEnvinfe = new  Node(nullptr);
+	_pNdeEnvinfe = new Node(nullptr);
 
-	_pObjNodeEnvinfe->setEnmElementoTipo(RAIZ);
-	_pObjNodeEnvinfe->setEnmValorTipo(NENHUM);
-	_pObjNodeEnvinfe->setIntOcorrenciaMax(-1);
-	_pObjNodeEnvinfe->setIntOcorrenciaMin(-1);
-	_pObjNodeEnvinfe->setIntTamanhoMax(-1);
-	_pObjNodeEnvinfe->setIntTamanhoMin(-1);
-	_pObjNodeEnvinfe->setStrIdentificador("AP01");
-	_pObjNodeEnvinfe->setStrNome("enviNFe");
+	_pNdeEnvinfe->setEnmElementoTipo(RAIZ);
+	_pNdeEnvinfe->setEnmValorTipo(NENHUM);
+	_pNdeEnvinfe->setIntOcorrenciaMax(-1);
+	_pNdeEnvinfe->setIntOcorrenciaMin(-1);
+	_pNdeEnvinfe->setIntTamanhoMax(-1);
+	_pNdeEnvinfe->setIntTamanhoMin(-1);
+	_pNdeEnvinfe->setStrIdentificador("AP01");
+	_pNdeEnvinfe->setStrNome("enviNFe");
 
-	return _pObjNodeEnvinfe;
+	return _pNdeEnvinfe;
 }
 
-Node* EnviNfe2ArqXml::getPObjNodeIdlote()
+Node* EnviNfe2ArqXml::getPNdeIdlote()
 {
-	if (_pObjNodeIdlote != nullptr)
+	if (_pNdeIdlote != nullptr)
 	{
-		return _pObjNodeIdlote;
+		return _pNdeIdlote;
 	}
 
-	_pObjNodeIdlote = new Node(this->getPObjNodeEnvinfe());
+	_pNdeIdlote = new Node(this->getPNdeEnvinfe());
 
-	_pObjNodeIdlote->setEnmElementoTipo(ELEMENTO);
-	_pObjNodeIdlote->setEnmValorTipo(NUMERICO);
-	_pObjNodeIdlote->setIntOcorrenciaMax(1);
-	_pObjNodeIdlote->setIntOcorrenciaMin(1);
-	_pObjNodeIdlote->setIntTamanhoMax(15);
-	_pObjNodeIdlote->setIntTamanhoMin(1);
-	_pObjNodeIdlote->setStrIdentificador("AP03");
-	_pObjNodeIdlote->setStrNome("idLote");
+	_pNdeIdlote->setEnmElementoTipo(ELEMENTO);
+	_pNdeIdlote->setEnmValorTipo(NUMERICO);
+	_pNdeIdlote->setIntOcorrenciaMax(1);
+	_pNdeIdlote->setIntOcorrenciaMin(1);
+	_pNdeIdlote->setIntTamanhoMax(15);
+	_pNdeIdlote->setIntTamanhoMin(1);
+	_pNdeIdlote->setStrIdentificador("AP03");
+	_pNdeIdlote->setStrNome("idLote");
 
-	return _pObjNodeIdlote;
+	return _pNdeIdlote;
 }
 
-Node* EnviNfe2ArqXml::getPObjNodeIndsinc()
+Node* EnviNfe2ArqXml::getPNdeIndsinc()
 {
-	if (_pObjNodeIndsinc != nullptr)
+	if (_pNdeIndsinc != nullptr)
 	{
-		return _pObjNodeIndsinc;
+		return _pNdeIndsinc;
 	}
 
-	_pObjNodeIndsinc = new Node(this->getPObjNodeEnvinfe());
+	_pNdeIndsinc = new Node(this->getPNdeEnvinfe());
 
-	_pObjNodeIndsinc->setEnmElementoTipo(ELEMENTO);
-	_pObjNodeIndsinc->setEnmValorTipo(NUMERICO);
-	_pObjNodeIndsinc->setIntOcorrenciaMax(1);
-	_pObjNodeIndsinc->setIntOcorrenciaMin(1);
-	_pObjNodeIndsinc->setIntTamanhoMax(1);
-	_pObjNodeIndsinc->setIntTamanhoMin(1);
-	_pObjNodeIndsinc->setStrIdentificador("AP03a");
-	_pObjNodeIndsinc->setStrNome("indSinc");
+	_pNdeIndsinc->setEnmElementoTipo(ELEMENTO);
+	_pNdeIndsinc->setEnmValorTipo(NUMERICO);
+	_pNdeIndsinc->setIntOcorrenciaMax(1);
+	_pNdeIndsinc->setIntOcorrenciaMin(1);
+	_pNdeIndsinc->setIntTamanhoMax(1);
+	_pNdeIndsinc->setIntTamanhoMin(1);
+	_pNdeIndsinc->setStrIdentificador("AP03a");
+	_pNdeIndsinc->setStrNome("indSinc");
 
-	return _pObjNodeIndsinc;
+	return _pNdeIndsinc;
 }
 
-Node* EnviNfe2ArqXml::getPObjNodeVersao()
+Node* EnviNfe2ArqXml::getPNdeVersao()
 {
-	if (_pObjNodeVersao != nullptr)
+	if (_pNdeVersao != nullptr)
 	{
-		return _pObjNodeVersao;
+		return _pNdeVersao;
 	}
 
-	_pObjNodeVersao = new Node(this->getPObjNodeEnvinfe());
+	_pNdeVersao = new Node(this->getPNdeEnvinfe());
 
-	_pObjNodeVersao->setEnmElementoTipo(A);
-	_pObjNodeVersao->setEnmValorTipo(NUMERICO);
-	_pObjNodeVersao->setIntOcorrenciaMax(1);
-	_pObjNodeVersao->setIntOcorrenciaMin(1);
-	_pObjNodeVersao->setIntTamanhoMax(4);
-	_pObjNodeVersao->setIntTamanhoMin(1);
-	_pObjNodeVersao->setStrIdentificador("AP02");
-	_pObjNodeVersao->setStrNome("versao");
+	_pNdeVersao->setEnmElementoTipo(A);
+	_pNdeVersao->setEnmValorTipo(NUMERICO);
+	_pNdeVersao->setIntOcorrenciaMax(1);
+	_pNdeVersao->setIntOcorrenciaMin(1);
+	_pNdeVersao->setIntTamanhoMax(4);
+	_pNdeVersao->setIntTamanhoMin(1);
+	_pNdeVersao->setStrIdentificador("AP02");
+	_pNdeVersao->setStrNome("versao");
 
-	return _pObjNodeVersao;
+	return _pNdeVersao;
 }

@@ -9,55 +9,55 @@ namespace OpenFiscal_arquivo_xml_node
 	{
 	public:
 
-		NfrefNode(Node* pObjNodePai);
+		NfrefNode(Node* pNdePai);
 		~NfrefNode();
 
 	protected:
 
 	private:
 
-		Node* _pObjNodeAamm;
-		Node* _pObjNodeCnpj;
-		Node* _pObjNodeCpf;
-		Node* _pObjNodeCuf;
-		Node* _pObjNodeEcfMod;
-		Node* _pObjNodeIe;
-		Node* _pObjNodeMod;
-		Node* _pObjNodeNcoo;
-		Node* _pObjNodeNecf;
-		Node* _pObjNodeNfpAamm;
-		Node* _pObjNodeNfpCnpj;
-		Node* _pObjNodeNfpCuf;
-		Node* _pObjNodeNfpMod;
-		Node* _pObjNodeNfpNnf;
-		Node* _pObjNodeNfpSerie;
-		Node* _pObjNodeNnf;
-		Node* _pObjNodeRefcte;
-		Node* _pObjNodeRefecf;
-		Node* _pObjNodeRefnf;
-		Node* _pObjNodeRefnfp;
-		Node* _pObjNodeSerie;
+		Node* _pNdeAamm;
+		Node* _pNdeCnpj;
+		Node* _pNdeCpf;
+		Node* _pNdeCuf;
+		Node* _pNdeEcfMod;
+		Node* _pNdeIe;
+		Node* _pNdeMod;
+		Node* _pNdeNcoo;
+		Node* _pNdeNecf;
+		Node* _pNdeNfpAamm;
+		Node* _pNdeNfpCnpj;
+		Node* _pNdeNfpCuf;
+		Node* _pNdeNfpMod;
+		Node* _pNdeNfpNnf;
+		Node* _pNdeNfpSerie;
+		Node* _pNdeNnf;
+		Node* _pNdeRefcte;
+		Node* _pNdeRefecf;
+		Node* _pNdeRefnf;
+		Node* _pNdeRefnfp;
+		Node* _pNdeSerie;
 
-		Node* getPObjNodeAamm();
-		Node* getPObjNodeCnpj();
-		Node* getPObjNodeCpf();
-		Node* getPObjNodeCuf();
-		Node* getPObjNodeEcfMod();
-		Node* getPObjNodeIe();
-		Node* getPObjNodeMod();
-		Node* getPObjNodeNcoo();
-		Node* getPObjNodeNecf();
-		Node* getPObjNodeNfpAamm();
-		Node* getPObjNodeNfpCnpj();
-		Node* getPObjNodeNfpCuf();
-		Node* getPObjNodeNfpMod();
-		Node* getPObjNodeNfpNnf();
-		Node* getPObjNodeNfpSerie();
-		Node* getPObjNodeNnf();
-		Node* getPObjNodeRefcte();
-		Node* getPObjNodeRefecf();
-		Node* getPObjNodeRefnf();
-		Node* getPObjNodeRefnfp();
-		Node* getPObjNodeSerie();
+		Node* getPNdeAamm();
+		Node* getPNdeCnpj();
+		Node* getPNdeCpf();
+		Node* getPNdeCuf();
+		Node* getPNdeEcfMod();
+		Node* getPNdeIe();
+		Node* getPNdeMod();
+		Node* getPNdeNcoo();
+		Node* getPNdeNecf();
+		Node* getPNdeNfpAamm();
+		Node* getPNdeNfpCnpj();
+		Node* getPNdeNfpCuf();
+		Node* getPNdeNfpMod();
+		Node* getPNdeNfpNnf();
+		Node* getPNdeNfpSerie();
+		Node* getPNdeNnf();
+		Node* getPNdeRefcte();
+		Node* getPNdeRefecf();
+		Node* getPNdeRefnf();
+		Node* getPNdeRefnfp();
+		Node* getPNdeSerie();
 	};
 }

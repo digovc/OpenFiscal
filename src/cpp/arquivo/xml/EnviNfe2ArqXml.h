@@ -18,16 +18,16 @@ namespace OpenFiscal_arquivo_xml
 
 	private:
 
-		Node* _pObjNodeEnvinfe;
-		Node* _pObjNodeIdlote;
-		Node* _pObjNodeIndsinc;
-		Node* _pObjNodeVersao;
-		vector<Node*> _lstPObjNodeNfe;
+		Node* _pNdeEnvinfe;
+		Node* _pNdeIdlote;
+		Node* _pNdeIndsinc;
+		Node* _pNdeVersao;
+		vector<Node*> _lstPNdeNfe;
 
-		Node* getPObjNodeEnvinfe();
-		Node* getPObjNodeIdlote();
-		Node* getPObjNodeIndsinc();
-		Node* getPObjNodeVersao();
-		vector<Node*> getLstPObjNodeNfe();
+		Node* getPNdeEnvinfe();
+		Node* getPNdeIdlote();
+		Node* getPNdeIndsinc();
+		Node* getPNdeVersao();
+		vector<Node*> getLstPNdeNfe();
 	};
 }
