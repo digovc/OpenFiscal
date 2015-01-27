@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>OpenFiscalServer</name>
+	<name>OpenFiscal Server</name>
 	<comment></comment>
 	<projects>
 		<project>DigoJava</project>
