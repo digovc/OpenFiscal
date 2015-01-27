@@ -1,10 +1,16 @@
-# Folders
-/src/cpp/Debug
-/src/c-sharp/OpenFiscalCSharp/bin
-/src/c-sharp/OpenFiscalCSharp/obj
-/src/c-sharp/Test/bin
-/src/c-sharp/Test/obj
+## Pastas ########################################
+##################################################
 
-# Extentions
+/src/cpp/Debug
+/src/csharp/client/bin
+/src/csharp/client/obj
+/src/csharp/test/bin
+/src/csharp/test/obj
+/src/java/server/build
+/src/java/server/.settings
+
+## Extenções #####################################
+##################################################
+
 *.sdf
 *.suo

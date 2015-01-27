@@ -1,6 +1,6 @@
 #OpenFiscal
 
-Biblioteca C++ para geração, validação e transmissão de documentos eletrônicos fiscais brasileiros.
+Biblioteca para geração, validação e transmissão de documentos eletrônicos fiscais brasileiros.
 
 * Conhecimento de Transporte Eletrônico,
 * Cupom Fiscal Eletrônico;
