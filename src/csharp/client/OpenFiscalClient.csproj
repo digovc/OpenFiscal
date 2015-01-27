@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C7BDC666-7990-4BC2-9C58-D1C0597A6938}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OpenFiscalClient</RootNamespace>
+    <AssemblyName>OpenFiscalClient</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.cs" />
+    <Compile Include="AppOpenFiscal.cs" />
+    <Compile Include="Objetos\InfoArmamento.cs" />
+    <Compile Include="Objetos\InfoCombustivel.cs" />
+    <Compile Include="Objetos\InfoExportacao.cs" />
+    <Compile Include="Objetos\InfoImportacao.cs" />
+    <Compile Include="Objetos\InfoImportacaoAdicao.cs" />
+    <Compile Include="Objetos\ObjetoMain.cs" />
+    <Compile Include="Objetos\Endereco.cs" />
+    <Compile Include="Objetos\InfoMedicamento.cs" />
+    <Compile Include="Objetos\InfoVeiculo.cs" />
+    <Compile Include="Objetos\NotaFiscalEletronica.cs" />
+    <Compile Include="Objetos\NotaFiscalEletronicaItem.cs" />
+    <Compile Include="Objetos\Pessoa.cs" />
+    <Compile Include="Objetos\TributacaoIcmsRegNormal.cs" />
+    <Compile Include="Objetos\TributacaoIcmsRegSimples.cs" />
+    <Compile Include="Objetos\TributacaoIcmsSn900.cs" />
+    <Compile Include="Objetos\TributacaoIcmsSn500.cs" />
+    <Compile Include="Objetos\TributacaoIcmsSn202.cs" />
+    <Compile Include="Objetos\TributacaoIcmsSn201.cs" />
+    <Compile Include="Objetos\TributacaoIcmsSn102.cs" />
+    <Compile Include="Objetos\TributacaoIcmsSn101.cs" />
+    <Compile Include="Objetos\TributacaoIcmsSt.cs" />
+    <Compile Include="Objetos\TributacaoIcmsPart.cs" />
+    <Compile Include="Objetos\TributacaoIcms90.cs" />
+    <Compile Include="Objetos\TributacaoIcms70.cs" />
+    <Compile Include="Objetos\TributacaoIcms60.cs" />
+    <Compile Include="Objetos\TributacaoIcms51.cs" />
+    <Compile Include="Objetos\TributacaoIcms40.cs" />
+    <Compile Include="Objetos\TributacaoIcms30.cs" />
+    <Compile Include="Objetos\TributacaoIcms20.cs" />
+    <Compile Include="Objetos\TributacaoIcms10.cs" />
+    <Compile Include="Objetos\TributacaoIcms00.cs" />
+    <Compile Include="Objetos\TributacaoIcms.cs" />
+    <Compile Include="Objeto.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
