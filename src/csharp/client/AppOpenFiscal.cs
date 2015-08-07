@@ -5,7 +5,7 @@ using System.IO;
 
 namespace OpenFiscalClient
 {
-    public class AppOpenFiscal : App
+    public class AppOpenFiscal : Objeto
     {
         #region CONSTANTES
 
@@ -100,10 +100,7 @@ namespace OpenFiscalClient
         /// Cria o arquivo XML da nota fiscal pronto para ser assinado e enviado para o servidor do Governo.
         /// </summary>
         /// <param name="nfe"></param>
-        /// <returns>0: Arquivo gerado com sucesso.</returns>
-        /// <returns>1: Falha ao gerar o arquivo.</returns>
-        /// <returns>2: Nota fiscal inválido. Verificar a propriedade "lstStrCritica" para ter acesso as críticas.</returns>
-        public int criarNfeXml(NotaFiscalEletronica nfe)
+        public void criarNfeXml(NotaFiscalEletronica nfe)
         {
             #region VARIÁVEIS
 
@@ -122,12 +119,10 @@ namespace OpenFiscalClient
 
                 if (!this.validarNfe(nfe))
                 {
-                    return 2;
+                    return;
                 }
 
-                nfe.exportarXml();
-                intResultado = this.runCriarNfeXml(nfe);
-                nfe.deletarXml();
+                Server.i.criarNfeXml(nfe);
             }
             catch (Exception ex)
             {
@@ -137,71 +132,6 @@ namespace OpenFiscalClient
             {
             }
 
-            #endregion AÇÕES
-
-            return intResultado;
-        }
-
-        private int runCriarNfeXml(NotaFiscalEletronica nfe)
-        {
-            #region VARIÁVEIS
-
-            string strArg;
-
-            #endregion VARIÁVEIS
-
-            #region AÇÕES
-            try
-            {
-                if (nfe == null)
-                {
-                    throw new ArgumentNullException();
-                }
-
-                strArg = "-x _arquivo_diretorio";
-                strArg = strArg.Replace("_arquivo_diretorio", nfe.dirExportCompleto);
-
-                return this.run(strArg);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            finally
-            {
-            }
-            #endregion AÇÕES
-        }
-
-        private int run(string strArg)
-        {
-            #region VARIÁVEIS
-
-            Process objProcess;
-
-            #endregion VARIÁVEIS
-
-            #region AÇÕES
-            try
-            {
-                objProcess = new Process();
-                
-                objProcess.StartInfo.UseShellExecute = false;
-                objProcess.StartInfo.RedirectStandardOutput = true;
-                objProcess.StartInfo.FileName = "OpenFiscal.exe";
-                objProcess.StartInfo.Arguments = strArg;
-                objProcess.Start();
-                objProcess.WaitForExit();
-                
-                return objProcess.ExitCode;
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            finally
-            {
-            }
             #endregion AÇÕES
         }
 

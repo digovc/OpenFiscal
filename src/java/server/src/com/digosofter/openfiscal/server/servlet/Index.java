@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.digosofter.digojava.erro.Erro;
-import com.digosofter.openfiscal.server.OpenFiscalServerWebSite;
+import com.digosofter.openfiscal.server.AppOpenFiscal;
 
 @WebServlet("/Index")
 public class Index extends HttpServlet {
@@ -22,12 +22,12 @@ public class Index extends HttpServlet {
   }
 
   @Override
-  protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+  protected void doGet(HttpServletRequest objHttpServletRequest, HttpServletResponse objHttpServletResponse) throws ServletException, IOException {
 
   }
 
   @Override
-  protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+  protected void doPost(HttpServletRequest objHttpServletRequest, HttpServletResponse objHttpServletResponse) throws ServletException, IOException {
 
   }
 
@@ -38,7 +38,7 @@ public class Index extends HttpServlet {
 
     try {
 
-      OpenFiscalServerWebSite.getI().responder(objHttpServletRequest, objHttpServletResponse);
+      AppOpenFiscal.getI().responder(objHttpServletRequest, objHttpServletResponse);
     }
     catch (Exception ex) {
 

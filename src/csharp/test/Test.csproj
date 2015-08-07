@@ -45,9 +45,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\client\OpenFiscalClient.csproj">
       <Project>{c7bdc666-7990-4bc2-9c58-d1c0597a6938}</Project>
       <Name>OpenFiscalClient</Name>

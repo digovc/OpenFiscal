@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.IO;
 using System.Xml.Serialization;
 
@@ -96,24 +97,17 @@ namespace OpenFiscalClient.Objetos
         #region MÉTODOS
 
         /// <summary>
-        /// Deleta o arquivo XMl temporário que representa esta instância.
+        /// Retorna uma string contendo o conteúdo desta instância no formato de JSON.
         /// </summary>
-        public void deletarXml()
+        public string getStrJson()
         {
             #region VARIÁVEIS
-
             #endregion VARIÁVEIS
 
             #region AÇÕES
-
             try
             {
-                if (!File.Exists(this.dirExportCompleto))
-                {
-                    return;
-                }
-
-                File.Delete(this.dirExportCompleto);
+                return JsonConvert.SerializeObject(this);
             }
             catch (Exception ex)
             {
@@ -122,44 +116,9 @@ namespace OpenFiscalClient.Objetos
             finally
             {
             }
-
             #endregion AÇÕES
-        }
 
-        /// <summary>
-        /// Exporta os dados da instância deste objeto para um arquivo XML para ser usado pela
-        /// </summary>
-        public void exportarXml()
-        {
-            #region VARIÁVEIS
-
-            FileStream objFileStream;
-            XmlSerializer objXmlSerializer;
-
-            #endregion VARIÁVEIS
-
-            #region AÇÕES
-
-            try
-            {
-                Directory.CreateDirectory(Path.GetDirectoryName(this.dirExportCompleto));
-                
-                objFileStream = System.IO.File.Create(this.dirExportCompleto);
-
-                objXmlSerializer = new XmlSerializer(this.GetType());
-                objXmlSerializer.Serialize(objFileStream, this);
-
-                objFileStream.Close();
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            finally
-            {
-            }
-
-            #endregion AÇÕES
+            return null;
         }
 
         #endregion MÉTODOS

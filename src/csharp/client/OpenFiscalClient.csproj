@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -39,7 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App.cs" />
     <Compile Include="AppOpenFiscal.cs" />
     <Compile Include="Objetos\InfoArmamento.cs" />
     <Compile Include="Objetos\InfoCombustivel.cs" />
@@ -52,6 +54,7 @@
     <Compile Include="Objetos\InfoVeiculo.cs" />
     <Compile Include="Objetos\NotaFiscalEletronica.cs" />
     <Compile Include="Objetos\NotaFiscalEletronicaItem.cs" />
+    <Compile Include="Objetos\ObjInterlocutor.cs" />
     <Compile Include="Objetos\Pessoa.cs" />
     <Compile Include="Objetos\TributacaoIcmsRegNormal.cs" />
     <Compile Include="Objetos\TributacaoIcmsRegSimples.cs" />
@@ -75,6 +78,7 @@
     <Compile Include="Objetos\TributacaoIcms.cs" />
     <Compile Include="Objeto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Server.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

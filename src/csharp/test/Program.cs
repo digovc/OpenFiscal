@@ -224,8 +224,6 @@ namespace Test
 
                 Pessoa objPessoa = new Pessoa();
                 objPessoa.objEndereco = objEndereco;
-
-                objPessoa.exportarXml();
             }
             catch (Exception ex)
             {
@@ -260,7 +258,6 @@ namespace Test
                     NotaFiscalEletronica nfe = new NotaFiscalEletronica();
                     nfe.objPessoaEmitente = objPessoaEmitente;
                     nfe.strId = "NFE999999999999999999999999999999";
-                    nfe.exportarXml();
                 }
             }
             catch (Exception ex)

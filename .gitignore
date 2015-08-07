@@ -14,3 +14,4 @@
 
 *.sdf
 *.suo
+/src/java/client/.settings

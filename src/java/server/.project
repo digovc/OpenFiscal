@@ -5,6 +5,7 @@
 	<projects>
 		<project>DigoJava</project>
 		<project>DigoWebApp</project>
+		<project>OpenFiscal Client</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
